@@ -3,7 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Block Inline</title>
+    <style>
+      div {
+        background-color: salmon;
+        width: 150px;
+        height: 50px;
+        margin: 15px;
+        padding: 15px;
+        /* display: block; */
+      }
+      span {
+        /* display: inline; */
+        background-color: greenyellow;
+        width: 150px;
+        height: 50px;
+        margin: 15px;
+        /* 기본마진적용 */
+        padding: 15px;
+      }
+      .block {
+        display: block;
+      }
+      .inline {
+        display: inline;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div>b1</div>
+    <div>b2</div>
+    <span>i1</span>
+    <span>i2</span>
+    <div class="inline">a1</div>
+    <span class="block">a2</span>
+    <div class="inline-block">a3</div>
+    <div class="inline-block">a4</div>
+    <img src="https://picsum.photos/100/50"/>
+    <img src="https://picsum.photos/100/50"/>
+    <div style="display: none">b1</div>
+    <div>b2</div>
+    <div style="visibility: hidden;">c1</div>
+    <div>c2</div>
+    <hr/>
+    <div class="container">
+    <!-- 마진충돌 방지 및 의미적응로 감싸는 요소 - container -->
+    </div>
+    <section>
+        <!--  component라고 해서 재사용 되며 디자인 / 기능적으로 하나로 묶여져서 만들어지는 요소 -->
+          <!-- 화면구성/레이아웃에서는 일반적으로 section -->
+           <header>반갑습니다 AA의 포트폴리오 입니다</header>
+           <nav><button>포트폴리오1</button> 포트폴리오2</nav>
+           <main>
+            <section>..실제 컨텐츠</section>
+           </main>
+    </section>
+</body>
 </html>
