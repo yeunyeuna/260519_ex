@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부트스트랩 마스터 레이아웃 (Position, Flex, Responsive)</title>
+    
+    <!-- 06_bootstrap.html 참고: Bootstrap 5.3.8 CSS 및 JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            --accent-gradient: linear-gradient(135deg, #f43f5e 0%, #ec4899 100%);
+            --success-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.4);
+        }
+
+        body {
+            font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            scroll-behavior: smooth;
+        }
+
+        /* 1. Header & Navigation (Position: sticky-top) */
+        .custom-nav {
+            background: rgba(15, 23, 42, 0.9) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* 2. Carousel Custom Styling */
+        .carousel-item {
+            height: 75vh;
+            min-height: 450px;
+            background-color: #0f172a;
+        }
+
+        .carousel-image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(15,23,42,0.6) 0%, rgba(15,23,42,0.95) 100%);
+            z-index: 1;
+        }
+
+        .carousel-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* 3. Responsive Card Hover Zoom */
+        .hover-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            background: white;
+        }
+
+        .hover-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #7c3aed;
+        }
+
+        /* 4. Position Helper Labels for Education */
+        .class-badge {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.75rem;
+            background-color: rgba(15, 23, 42, 0.08);
+            color: #475569;
+            border-radius: 4px;
+            padding: 2px 6px;
+        }
+
+        .class-badge-dark {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #cbd5e1;
+        }
+
+        /* 5. Fixed Action Button (Position: fixed) */
+        .custom-fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            z-index: 1040;
+            transition: all 0.3s ease;
+        }
+
+        .custom-fab:hover {
+            transform: scale(1.1) rotate(15deg);
+            color: white;
+            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- [S] Header (Navbar Component + Position: sticky-top) -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark custom-nav py-3" aria-label="글로벌 메뉴">
+            <div class="container">
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-bootstrap-fill text-info fs-3"></i>
+                    <span>BootLabs <span class="class-badge class-badge-dark">.sticky-top</span></span>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navContent">
+                    <!-- Flexbox: ms-auto (마진 스타트 오토로 우측 정렬) -->
+                    <ul class="navbar-nav ms-auto align-items-center gap-2 gap-lg-3 mt-3 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hero-section">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#flex-lab">Flex Lab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#position-lab">Position Lab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#components-section">Components</a>
+                        </li>
+                        <li class="nav-item ms-lg-2">
+                            <!-- Button trigger Modal -->
+                            <button class="btn btn-info text-dark rounded-pill px-4 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">
+                                Contact <span class="class-badge">.btn</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- [E] Header -->
+
+    <!-- [S] Hero Carousel Section (Carousel Component + Responsive Typography + Flex Alignment) -->
+    <main id="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="carousel-image-overlay"></div>
+                    <!-- Flexbox: d-flex, align-items-center로 세로 중앙 정렬 -->
+                    <div class="container h-100 d-flex align-items-center carousel-content">
+                        <div class="row w-100">
+                            <!-- Responsive columns: 모바일에서는 12칸 전체, 데스크톱에서는 8칸 -->
+                            <div class="col-12 col-lg-8 text-white">
+                                <span class="badge bg-info text-dark mb-3 px-3 py-2 rounded-pill fw-bold">RESPONSIVE DESIGN</span>
+                                <h1 class="display-3 fw-bold mb-3">모바일에서 데스크톱까지<br>유연한 반응형 레이아웃</h1>
+                                <p class="lead text-light-50 mb-4">부트스트랩의 Grid, Flex, Spacing 클래스군을 결합하여 스크린 크기에 따라 동적으로 적응하는 프리미엄 웹 인터페이스를 설계합니다.</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="#flex-lab" class="btn btn-primary btn-lg rounded-pill px-4 py-3 fw-semibold">Flex 실습 공간 바로가기</a>
+                                    <button class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#inquiryModal">문의 남기기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="carousel-image-overlay"></div>
+                    <div class="container h-100 d-flex align-items-center carousel-content">
+                        <div class="row w-100">
+                            <div class="col-12 col-lg-8 text-white">
+                                <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold">POSITION UTILITIES</span>
+                                <h1 class="display-3 fw-bold mb-3">자유로운 요소 배치<br>CSS Position 마스터</h1>
+                                <p class="lead text-light-50 mb-4">Static, Relative, Absolute, Fixed, Sticky 클래스를 레이아웃 적재적소에 활용해 독창적인 네비게이션과 디자인 요소들을 구현해 보세요.</p>
+                                <a href="#position-lab" class="btn btn-warning btn-lg rounded-pill px-4 py-3 fw-semibold text-dark">Position 실험실 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <!-- [E] Hero Section -->
+
+    <!-- [S] Flexbox Lab Section (Flex & Spacing) -->
+    <section id="flex-lab" class="py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-8 text-center">
+                    <span class="text-primary fw-bold text-uppercase tracking-wider">Alignment Space</span>
+                    <h2 class="fw-bold mt-2 display-6">Flexbox 정렬 실습</h2>
+                    <p class="text-muted mt-2">부트스트랩의 강력한 flexbox 속성(<code class="class-badge">.d-flex</code>, <code class="class-badge">.justify-content-*</code>, <code class="class-badge">.align-items-*</code>)을 시각적으로 학습합니다.</p>
+                </div>
+            </div>
+
+            <!-- 3단 그리드 반응형 (md 이상에서 가로정렬, 모바일에서는 세로정렬) -->
+            <div class="row g-4 mb-4">
+                <!-- Flex: Row-Direction -->
+                <div class="col-12 col-md-6">
+                    <div class="card shadow-sm border-0 rounded-4 p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="fw-bold m-0">가로 정렬 & 여백 분배</h5>
+                            <span class="class-badge">.flex-row</span>
+                        </div>
+                        <p class="text-muted small">아이템들 사이에 균등한 공백 분배: <code class="class-badge">.justify-content-between</code></p>
+                        
+                        <!-- Flex container 적용 -->
+                        <div class="d-flex justify-content-between align-items-center bg-light p-3 rounded-3" style="min-height: 100px;">
+                            <div class="bg-primary text-white px-3 py-2 rounded-2 fw-bold shadow-sm">아이템 A</div>
+                            <div class="bg-success text-white px-3 py-2 rounded-2 fw-bold shadow-sm">아이템 B</div>
+                            <div class="bg-info text-dark px-3 py-2 rounded-2 fw-bold shadow-sm">아이템 C</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flex: Column-Direction -->
+                <div class="col-12 col-md-6">
+                    <div class="card shadow-sm border-0 rounded-4 p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="fw-bold m-0">세로 정렬</h5>
+                            <span class="class-badge">.flex-column</span>
+                        </div>
+                        <p class="text-muted small">방향을 수직으로 바꾸고 가운데 정렬: <code class="class-badge">.flex-column</code> <code class="class-badge">.align-items-center</code></p>
+                        
+                        <!-- Flex column 및 align-items-center 적용 -->
+                        <div class="d-flex flex-column align-items-center justify-content-center bg-light p-3 rounded-3 gap-2" style="min-height: 100px;">
+                            <div class="bg-dark text-white px-4 py-1 rounded-2 small">순서 1</div>
+                            <div class="bg-secondary text-white px-4 py-1 rounded-2 small">순서 2</div>
+                            <div class="bg-light text-dark border px-4 py-1 rounded-2 small">순서 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Responsive / Adaptive Layout Container -->
+            <div class="card shadow-sm border-0 rounded-4 p-4 bg-dark text-white">
+                <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-4">
+                    <div>
+                        <span class="badge bg-danger mb-2">ADAPTIVE FLEX</span>
+                        <h4 class="fw-bold m-0">화면 폭에 따라 유연하게 바뀌는 플렉스 레이아웃</h4>
+                        <p class="text-white-50 m-0 mt-1 small">모바일에서는 세로 정렬로 꽉 채우고, 데스크톱(lg)에서는 가로형 한 줄 정렬로 자동 변경됩니다.</p>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row gap-2 w-100 w-lg-auto justify-content-lg-end">
+                        <button class="btn btn-outline-light rounded-pill px-4">취소 <span class="class-badge class-badge-dark">.w-100</span></button>
+                        <button class="btn btn-primary text-white rounded-pill px-4">확인 및 동의</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [E] Flexbox Lab Section -->
+
+    <!-- [S] Position Lab Section (Relative, Absolute, Fixed, Sticky) -->
+    <section id="position-lab" class="py-5 bg-white border-top border-bottom">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-8 text-center">
+                    <span class="text-danger fw-bold text-uppercase tracking-wider">Coordinate System</span>
+                    <h2 class="fw-bold mt-2 display-6">CSS Position 실무 매칭</h2>
+                    <p class="text-muted mt-2">부트스트랩의 Position 위치 클래스(<code class="class-badge">.position-*</code>)들을 직관적인 디자인 위젯 형태로 설계하였습니다.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Relative & Absolute Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card hover-card h-100 rounded-4 border-0 shadow-sm p-4 position-relative overflow-hidden">
+                        <!-- absolute badge: top-0, end-0 (우상단 정렬) -->
+                        <div class="position-absolute top-0 end-0 m-3 badge bg-danger py-2 px-3 rounded-pill shadow-sm">
+                            HOT <span class="class-badge class-badge-dark">.position-absolute</span>
+                        </div>
+                        
+                        <div class="pt-3">
+                            <span class="class-badge">.position-relative</span>
+                            <h4 class="fw-bold mt-2">상대 및 절대 좌표</h4>
+                            <p class="text-muted small mt-2">부모 요소 카드에 <code>.position-relative</code>를 지정하고, 뱃지 요소에 <code>.position-absolute</code> 및 좌표 유틸리티를 적용해 우상단에 밀착 배치시켰습니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sticky Panel inside grid -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card hover-card h-100 rounded-4 border-0 shadow-sm p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="class-badge">.sticky-top</span>
+                            <span class="badge bg-success">STICKY WIDGET</span>
+                        </div>
+                        <h4 class="fw-bold">스티키 탐색 바 예시</h4>
+                        <p class="text-muted small">이 레이아웃 상단의 내비게이션 바는 <code>.sticky-top</code> 속성을 활용하여 사용자가 스크롤을 내릴 때 상단에 달라붙어 고정되도록 디자인되었습니다.</p>
+                        <div class="bg-light p-2 rounded text-center border-dashed border-2 py-3 mt-auto">
+                            <i class="bi bi-arrow-up-circle-fill text-success fs-3"></i>
+                            <div class="text-xs text-muted mt-1 fw-bold">헤더 네비게이션이 동작 중입니다</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fixed Widget Description -->
+                <div class="col-12 col-lg-4">
+                    <div class="card hover-card h-100 rounded-4 border-0 shadow-sm p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="class-badge">.position-fixed</span>
+                            <span class="badge bg-primary">FIXED ELEMENT</span>
+                        </div>
+                        <h4 class="fw-bold">고정 플로팅 액션 단추</h4>
+                        <p class="text-muted small">오른쪽 하단 모서리를 주시해 주세요. <code>.position-fixed .bottom-0 .end-0</code> 속성을 가진 자주색 단추가 화면 스크롤과 독립적으로 항상 고정되어 노출됩니다.</p>
+                        <div class="mt-auto bg-light rounded-3 p-3">
+                            <small class="text-muted">클릭 시 상담 및 문의하기 팝업 모달이 노출됩니다.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [E] Position Lab Section -->
+
+    <!-- [S] Famous Bootstrap Components Showroom -->
+    <section id="components-section" class="py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-8 text-center">
+                    <span class="text-info fw-bold text-uppercase tracking-wider">Bootstrap Showroom</span>
+                    <h2 class="fw-bold mt-2 display-6">유명 핵심 컴포넌트 모음</h2>
+                    <p class="text-muted mt-2">실제 웹 프로젝트 개발에서 가장 빈번하게 활용되는 핵심 부트스트랩 UI 모음입니다.</p>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <!-- Left: Accordion (자주 묻는 질문) & Form Elements (Floating Labels) -->
+                <div class="col-12 col-lg-6">
+                    <h4 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                        <i class="bi bi-question-circle text-primary"></i>
+                        <span>자주 묻는 질문 <span class="class-badge">.accordion</span></span>
+                    </h4>
+                    
+                    <!-- Accordion Component -->
+                    <div class="accordion shadow-sm rounded-4 overflow-hidden mb-5" id="faqAccordion">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    부트스트랩 Grid와 Flexbox의 핵심 차이는 무엇인가요?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small bg-light">
+                                    Grid(<code>.row</code>, <code>.col-*</code>)는 2차원(가로 세로 동시) 레이아웃 시스템으로 전체 구조를 잡기에 이상적이며, Flexbox(<code>.d-flex</code>)는 1차원 정렬(단일 축 기준 정렬) 및 여백 배치에 매우 강력합니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 border-top">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    반응형 중단점(Breakpoints)은 어떻게 작동하나요?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small bg-light">
+                                    부트스트랩은 모바일 우선 기법(Mobile-first)을 채택하고 있어 기본 스타일링에서 시작하여 스크린 크기에 따라 <code>sm(576px)</code>, <code>md(768px)</code>, <code>lg(992px)</code>, <code>xl(1200px)</code>, <code>xxl(1400px)</code> 단위로 상위 스타일이 재적용됩니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Labels Form Components -->
+                    <h4 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                        <i class="bi bi-input-cursor-text text-primary"></i>
+                        <span>플로팅 폼 컴포넌트 <span class="class-badge">.form-floating</span></span>
+                    </h4>
+                    <div class="card border-0 shadow-sm p-4 rounded-4 bg-light">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control border-0" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">이메일 주소</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select border-0" id="floatingSelect" aria-label="선택 상자 예제">
+                                <option selected>문의 유형 선택</option>
+                                <option value="1">기술적 지원 문의</option>
+                                <option value="2">비즈니스 제휴 문의</option>
+                            </select>
+                            <label for="floatingSelect">유형</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control border-0" placeholder="내용을 남겨주세요" id="floatingTextarea" style="height: 100px"></textarea>
+                            <label for="floatingTextarea">문의 내용</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Alert, Progress & Card Combination -->
+                <div class="col-12 col-lg-6">
+                    <h4 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                        <i class="bi bi-bell text-primary"></i>
+                        <span>알림창 및 상태 관리 <span class="class-badge">.alert</span></span>
+                    </h4>
+
+                    <!-- Alert Component -->
+                    <div class="alert alert-info border-0 rounded-4 shadow-sm p-4 mb-4 d-flex gap-3 align-items-start" role="alert">
+                        <i class="bi bi-info-circle-fill text-info fs-4"></i>
+                        <div>
+                            <h6 class="alert-heading fw-bold m-0">실시간 데이터 동기화 완료</h6>
+                            <p class="m-0 mt-1 small text-muted">원격 저장소(GitHub)와의 커밋 및 푸쉬 상태가 실시간으로 매칭되어 최신 웹 마크업 상태를 완벽하게 동기화하고 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <h4 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                        <i class="bi bi-bar-chart-steps text-primary"></i>
+                        <span>진행 상태 및 버튼 뱃지</span>
+                    </h4>
+
+                    <div class="card border-0 shadow-sm p-4 rounded-4 mb-4">
+                        <!-- Progress Component -->
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-bold small">Bootstrap 마스터 진행률</span>
+                                <span class="badge bg-primary">85%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <!-- Pill Badges & Buttons Combined -->
+                        <div class="d-flex flex-wrap gap-2 align-items-center">
+                            <button class="btn btn-outline-primary d-flex align-items-center gap-2">
+                                <span>북마크 수</span>
+                                <span class="badge bg-primary rounded-pill">12</span>
+                            </button>
+                            <button class="btn btn-dark d-flex align-items-center gap-2">
+                                <span>메일함</span>
+                                <span class="badge bg-danger rounded-pill">5+</span>
+                            </button>
+                            <span class="badge bg-light text-dark border">#부트스트랩5</span>
+                            <span class="badge bg-light text-dark border">#Flex</span>
+                            <span class="badge bg-light text-dark border">#Grid</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [E] Famous Components -->
+
+    <!-- [S] Footer (Responsive Grid Layout) -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5 border-top border-secondary">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-12 col-lg-4">
+                    <span class="fs-4 fw-bold text-info"><i class="bi bi-bootstrap-fill"></i> BootLabs</span>
+                    <p class="text-white-50 mt-2 small">웹 표준 기술과 모던 컴포넌트 프레임워크인 부트스트랩을 연구하고 최고의 사용자 인터페이스를 디자인하는 연구 그룹입니다.</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="fw-bold text-info">실습 메뉴</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mt-3 small">
+                        <li><a href="#hero-section" class="text-white-50 text-decoration-none hover-white">Home</a></li>
+                        <li><a href="#flex-lab" class="text-white-50 text-decoration-none hover-white">Flex Lab</a></li>
+                        <li><a href="#position-lab" class="text-white-50 text-decoration-none hover-white">Position Lab</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="fw-bold text-info">연결 채널</h6>
+                    <div class="d-flex gap-3 mt-3 fs-5">
+                        <a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-slack"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-white-50">
+                <span>&copy; 2026 BootLabs. All rights reserved.</span>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white-50 text-decoration-none">개인정보처리방침</a>
+                    <a href="#" class="text-white-50 text-decoration-none">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- [E] Footer -->
+
+    <!-- [S] Position: Fixed Floating Contact Button -->
+    <button class="custom-fab" data-bs-toggle="modal" data-bs-target="#inquiryModal" aria-label="상담 채팅창 열기" title="문의하기">
+        <i class="bi bi-chat-dots-fill"></i>
+    </button>
+    <!-- [E] Fixed Floating Contact Button -->
+
+    <!-- [S] Modal Component (1:1 Inquiry) -->
+    <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow-lg">
+                <div class="modal-header bg-dark text-white p-4">
+                    <h5 class="modal-title fw-bold" id="inquiryModalLabel">온라인 1:1 상담 등록</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="닫기"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="modalEmail" class="form-label fw-bold">이메일 주소</label>
+                            <input type="email" class="form-control" id="modalEmail" placeholder="example@domain.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="modalMessage" class="form-label fw-bold">문의 사항</label>
+                            <textarea class="form-control" id="modalMessage" rows="4" placeholder="문의하실 구체적인 코딩 이슈 또는 협업 사항을 남겨주시면 빠르게 답변드리겠습니다."></textarea>
+                        </div>
+                        <div class="d-grid mt-4">
+                            <button type="button" class="btn btn-primary btn-lg rounded-pill" style="background: var(--primary-gradient); border: none;" data-bs-dismiss="modal">
+                                문의 접수하기
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [E] Modal Component -->
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
