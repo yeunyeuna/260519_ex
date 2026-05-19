@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상속과 사이즈</title>
+    <style>
+        div {
+            background-color: beige;
+        }
+        .parnet {
+            /* 박스계열 -상속이 안된다 */
+            width: 400px;
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid red;
+            background-color: yellow;
+            /* 폰트계열 - 상속이 된다 */
+            color: brown;
+            font-size: 36px;
+            text-align: right;
+
+        }
+        .child {
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parnet">
+        부모요소
+        <div class="child">자식요소</div>
+    </div>
+</body>
+</html>
