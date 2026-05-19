@@ -11,6 +11,9 @@
             border: 5px solid green;
             padding: 20px;
             margin: 20px;
+            background-color: beige;
+            /* 기본값 */
+            /* box-sizing: content-box; */
         }
 
     </style>
@@ -18,7 +21,11 @@
 <body>
     <p>기본 위아래 여백이 있음</p>
     <!-- 기본박스 (content-box) -->
-     <div>div</div>
-     한줄을 다 차지
+     <h1>content-box</h1>
+     <div>250*150</div>
+     <p>(280+20*2+5*2)*(100+20*2+5*2)</p>
+     <span>한줄을 다 차지</span>
+     <div style="box-sizing: content-box;"></div>
+     <p>(20*2+5*2+150)*(20*2+5*2+50)</p>
 </body>
 </html>
