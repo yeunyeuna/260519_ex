@@ -4,29 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>JASON'S GPU STORE - 프리미엄 GPU 전문점</title>
+
     <meta property="og:title" content="AA 포트폴리오 웹사이트" />
     <meta property="og:description" content="백엔드 취업 요망" />
-    <meta property="og:url" content="https://yeunyeuna.github.io/260518_ex/" />
+    <meta
+      property="og:url"
+      content="https://yeunyeuna.github.io/260519_ex/07_2.html"
+    />
     <meta
       property="og:image"
-      content="https://yeunyeuna.github.io/260518_ex/prev02.png"
+      content="https://yeunyeuna.github.io/260519_ex/prev02.png"
     />
     <meta property="og:type" content="website" />
     <style>
       body {
-        font-family: 'Plus Jakarta Sans', 'Noto Sans KR', sans-serif;
+        font-family: "Plus Jakarta Sans", "Noto Sans KR", sans-serif;
         background-color: #0b0f19;
       }
       .font-title {
-        font-family: 'Outfit', sans-serif;
+        font-family: "Outfit", sans-serif;
       }
       @keyframes marquee {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-50%); }
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
       }
       .animate-marquee {
         animation: marquee 25s linear infinite;
@@ -54,7 +65,7 @@
         box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
       }
     </style>
-      <!-- favicon -->
+    <!-- favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -62,14 +73,17 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body class="text-slate-100 overflow-x-hidden antialiased">
-
     <!-- 1. TOP LIVE TICKER (적응형 / CSS 애니메이션) -->
-    <div class="w-full bg-slate-950 border-b border-slate-800/80 py-2 text-xs overflow-hidden z-50 relative">
+    <div
+      class="w-full bg-slate-950 border-b border-slate-800/80 py-2 text-xs overflow-hidden z-50 relative"
+    >
       <div class="flex whitespace-nowrap animate-marquee">
         <!-- Ticker Item Loop -->
         <span class="mx-6 flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-          <span class="text-slate-400 font-title font-medium">RTX 5090 FE:</span>
+          <span class="text-slate-400 font-title font-medium"
+            >RTX 5090 FE:</span
+          >
           <span class="font-bold font-title text-emerald-400">$1,999.00</span>
           <span class="text-emerald-500 font-bold">▲ 4.2%</span>
         </span>
@@ -79,12 +93,16 @@
           <span class="text-emerald-500 font-bold">▲ 1.8%</span>
         </span>
         <span class="mx-6 flex items-center gap-2">
-          <span class="text-slate-400 font-title font-medium">RX 8900 XTX:</span>
+          <span class="text-slate-400 font-title font-medium"
+            >RX 8900 XTX:</span
+          >
           <span class="font-bold font-title text-purple-400">$999.00</span>
           <span class="text-rose-500 font-bold">▼ 0.5%</span>
         </span>
         <span class="mx-6 flex items-center gap-2">
-          <span class="text-slate-400 font-title font-medium">RTX 4070 Super:</span>
+          <span class="text-slate-400 font-title font-medium"
+            >RTX 4070 Super:</span
+          >
           <span class="font-bold font-title text-emerald-400">$599.00</span>
           <span class="text-slate-400">0.0%</span>
         </span>
@@ -96,7 +114,9 @@
         <!-- Duplicate for Infinite Loop -->
         <span class="mx-6 flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-          <span class="text-slate-400 font-title font-medium">RTX 5090 FE:</span>
+          <span class="text-slate-400 font-title font-medium"
+            >RTX 5090 FE:</span
+          >
           <span class="font-bold font-title text-emerald-400">$1,999.00</span>
           <span class="text-emerald-500 font-bold">▲ 4.2%</span>
         </span>
@@ -106,12 +126,16 @@
           <span class="text-emerald-500 font-bold">▲ 1.8%</span>
         </span>
         <span class="mx-6 flex items-center gap-2">
-          <span class="text-slate-400 font-title font-medium">RX 8900 XTX:</span>
+          <span class="text-slate-400 font-title font-medium"
+            >RX 8900 XTX:</span
+          >
           <span class="font-bold font-title text-purple-400">$999.00</span>
           <span class="text-rose-500 font-bold">▼ 0.5%</span>
         </span>
         <span class="mx-6 flex items-center gap-2">
-          <span class="text-slate-400 font-title font-medium">RTX 4070 Super:</span>
+          <span class="text-slate-400 font-title font-medium"
+            >RTX 4070 Super:</span
+          >
           <span class="font-bold font-title text-emerald-400">$599.00</span>
           <span class="text-slate-400">0.0%</span>
         </span>
@@ -124,46 +148,95 @@
     </div>
 
     <!-- 2. STICKY HEADER (Flex Layout & Glassmorphism) -->
-    <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-[#0b0f19]/85 border-b border-slate-800 transition-all duration-300">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        
+    <header
+      class="sticky top-0 z-40 w-full backdrop-blur-md bg-[#0b0f19]/85 border-b border-slate-800 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
         <!-- Logo (Flex items) -->
         <a href="#" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center text-slate-950 font-bold font-title text-lg shadow-[0_0_20px_rgba(16,185,129,0.3)] group-hover:scale-105 transition-transform duration-300">
+          <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center text-slate-950 font-bold font-title text-lg shadow-[0_0_20px_rgba(16,185,129,0.3)] group-hover:scale-105 transition-transform duration-300"
+          >
             J
           </div>
           <div class="flex flex-col">
-            <span class="font-title text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-100 to-emerald-400 bg-clip-text text-transparent">
+            <span
+              class="font-title text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-100 to-emerald-400 bg-clip-text text-transparent"
+            >
               JASON'S GPU
             </span>
-            <span class="text-[10px] tracking-widest text-emerald-500 font-bold font-title -mt-1">
+            <span
+              class="text-[10px] tracking-widest text-emerald-500 font-bold font-title -mt-1"
+            >
               PREMIUM HARDWARE
             </span>
           </div>
         </a>
 
         <!-- Desktop Navigation (Flex, Hidden on Mobile) -->
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-          <a href="#products" class="hover:text-emerald-400 transition-colors duration-200">Graphics Cards</a>
-          <a href="#benchmark" class="hover:text-emerald-400 transition-colors duration-200">Resolution Guide</a>
-          <a href="#about" class="hover:text-emerald-400 transition-colors duration-200">About Shop</a>
-          <a href="#contact" class="hover:text-emerald-400 transition-colors duration-200">Support</a>
+        <nav
+          class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300"
+        >
+          <a
+            href="#products"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Graphics Cards</a
+          >
+          <a
+            href="#benchmark"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Resolution Guide</a
+          >
+          <a
+            href="#about"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >About Shop</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Support</a
+          >
         </nav>
 
         <!-- Header Actions (Flex) -->
         <div class="flex items-center gap-4">
           <!-- Live Indicator & Shop Info -->
-          <div class="hidden lg:flex items-center gap-2 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-full text-xs text-slate-400">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <div
+            class="hidden lg:flex items-center gap-2 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-full text-xs text-slate-400"
+          >
+            <span
+              class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"
+            ></span>
             <span>매장 영업 중 (GPU 즉시 출고)</span>
           </div>
 
           <!-- Shopping Cart Icon (Position Relative / Badge Absolute) -->
-          <button id="cart-toggle-btn" class="relative p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-800/50 transition-all duration-300 cursor-pointer" aria-label="쇼핑카트">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-slate-300">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+          <button
+            id="cart-toggle-btn"
+            class="relative p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-800/50 transition-all duration-300 cursor-pointer"
+            aria-label="쇼핑카트"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-6 h-6 text-slate-300"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
             </svg>
-            <span id="cart-badge" class="absolute -top-1 -right-1 bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-extrabold text-[10px] w-5 h-5 rounded-full flex items-center justify-center scale-90 shadow-md shadow-emerald-500/20">
+            <span
+              id="cart-badge"
+              class="absolute -top-1 -right-1 bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-extrabold text-[10px] w-5 h-5 rounded-full flex items-center justify-center scale-90 shadow-md shadow-emerald-500/20"
+            >
               0
             </span>
           </button>
@@ -172,41 +245,70 @@
     </header>
 
     <!-- 3. HERO HERO SECTION (Responsive Flex / Grid layout with custom neon visual elements) -->
-    <section class="relative min-h-[75vh] flex items-center justify-center overflow-hidden py-16 px-4 md:px-8">
+    <section
+      class="relative min-h-[75vh] flex items-center justify-center overflow-hidden py-16 px-4 md:px-8"
+    >
       <!-- Background glowing grid and radial gradient -->
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.08),transparent_50%)]"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(99,102,241,0.08),transparent_50%)]"></div>
-      <div class="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.08),transparent_50%)]"
+      ></div>
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(99,102,241,0.08),transparent_50%)]"
+      ></div>
+      <div
+        class="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-slate-800 to-transparent"
+      ></div>
 
-      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <div
+        class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10"
+      >
         <!-- Hero Text Column -->
-        <div class="lg:col-span-7 flex flex-col items-start space-y-6 text-left">
-          <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest font-title">
+        <div
+          class="lg:col-span-7 flex flex-col items-start space-y-6 text-left"
+        >
+          <div
+            class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest font-title"
+          >
             ⚡ NEW GENERATION GPU RELEASED
           </div>
-          <h1 class="font-title text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none tracking-tight">
+          <h1
+            class="font-title text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none tracking-tight"
+          >
             제이슨의 컴퓨터가게 <br />
-            <span class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-500 bg-clip-text text-transparent">
+            <span
+              class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-500 bg-clip-text text-transparent"
+            >
               차세대 GPU 쇼케이스
             </span>
           </h1>
-          <p class="text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed">
-            인공지능, 딥러닝, 4K 초고화질 게이밍을 위한 프리미엄 그래픽카드 전문점입니다. 
-            현존 최강의 성능을 자랑하는 RTX 50 시리즈와 Radeon RX 8000 라인업을 최저가에 즉시 만나보세요.
+          <p
+            class="text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed"
+          >
+            인공지능, 딥러닝, 4K 초고화질 게이밍을 위한 프리미엄 그래픽카드
+            전문점입니다. 현존 최강의 성능을 자랑하는 RTX 50 시리즈와 Radeon RX
+            8000 라인업을 최저가에 즉시 만나보세요.
           </p>
 
           <!-- Buttons (Flex layout) -->
           <div class="flex flex-wrap gap-4 w-full sm:w-auto">
-            <a href="#products" class="w-full sm:w-auto text-center bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-bold px-8 py-4 rounded-xl hover:scale-102 hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] transition-all duration-300">
+            <a
+              href="#products"
+              class="w-full sm:w-auto text-center bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-bold px-8 py-4 rounded-xl hover:scale-102 hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] transition-all duration-300"
+            >
               GPU 구매하러 가기
             </a>
-            <a href="#benchmark" class="w-full sm:w-auto text-center bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold px-8 py-4 rounded-xl transition-all duration-300">
+            <a
+              href="#benchmark"
+              class="w-full sm:w-auto text-center bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold px-8 py-4 rounded-xl transition-all duration-300"
+            >
               성능 매칭 가이드
             </a>
           </div>
 
           <!-- Mini stats grid (Flex / Grid) -->
-          <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-900 w-full">
+          <div
+            class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-900 w-full"
+          >
             <div>
               <p class="font-title text-3xl font-extrabold text-white">100%</p>
               <p class="text-xs text-slate-500 mt-1">정품 보증 유통</p>
@@ -223,85 +325,246 @@
         </div>
 
         <!-- Hero Card Showcase Column (Position Relative & Animations) -->
-        <div class="lg:col-span-5 flex justify-center items-center relative min-h-[350px]">
+        <div
+          class="lg:col-span-5 flex justify-center items-center relative min-h-[350px]"
+        >
           <!-- Glowing background circles -->
-          <div class="absolute w-72 h-72 rounded-full bg-emerald-500/10 filter blur-3xl animate-pulse"></div>
-          
+          <div
+            class="absolute w-72 h-72 rounded-full bg-emerald-500/10 filter blur-3xl animate-pulse"
+          ></div>
+
           <!-- Decorative Futuristic GPU Frame -->
-          <div class="relative w-full max-w-[380px] bg-slate-900/90 border border-slate-800 rounded-3xl p-6 glow-emerald hover:border-emerald-500/30 transition-all duration-500 group">
-            <div class="absolute top-4 right-4 flex items-center gap-1.5 bg-emerald-500/10 px-2.5 py-1 rounded-md text-[10px] font-bold text-emerald-400 border border-emerald-500/20">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+          <div
+            class="relative w-full max-w-[380px] bg-slate-900/90 border border-slate-800 rounded-3xl p-6 glow-emerald hover:border-emerald-500/30 transition-all duration-500 group"
+          >
+            <div
+              class="absolute top-4 right-4 flex items-center gap-1.5 bg-emerald-500/10 px-2.5 py-1 rounded-md text-[10px] font-bold text-emerald-400 border border-emerald-500/20"
+            >
+              <span
+                class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"
+              ></span>
               HOT ITEM
             </div>
-            
-            <span class="text-xs font-bold text-slate-500 font-title block mb-2 uppercase">Best Seller Recommends</span>
-            <h3 class="font-title text-2xl font-bold text-white mb-4">NVIDIA GeForce RTX 5090</h3>
-            
+
+            <span
+              class="text-xs font-bold text-slate-500 font-title block mb-2 uppercase"
+              >Best Seller Recommends</span
+            >
+            <h3 class="font-title text-2xl font-bold text-white mb-4">
+              NVIDIA GeForce RTX 5090
+            </h3>
+
             <!-- Graphic Illustration of a GPU (Dynamic SVG with rotating fan CSS animations on card hover) -->
-            <div class="w-full h-44 bg-slate-950 rounded-2xl relative overflow-hidden border border-slate-800 flex items-center justify-center group-hover:border-emerald-500/20 transition-colors">
-              <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0)_0%,rgba(16,185,129,0.03)_50%,rgba(0,0,0,0)_100%)] animate-scan"></div>
-              
+            <div
+              class="w-full h-44 bg-slate-950 rounded-2xl relative overflow-hidden border border-slate-800 flex items-center justify-center group-hover:border-emerald-500/20 transition-colors"
+            >
+              <div
+                class="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0)_0%,rgba(16,185,129,0.03)_50%,rgba(0,0,0,0)_100%)] animate-scan"
+              ></div>
+
               <!-- SVG GPU Layout -->
-              <svg class="w-64 h-32 text-slate-800" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                class="w-64 h-32 text-slate-800"
+                viewBox="0 0 240 120"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <!-- Card Base -->
-                <rect x="10" y="20" width="220" height="80" rx="8" fill="#111827" stroke="#374151" stroke-width="2"/>
-                <rect x="20" y="10" width="10" height="10" fill="#10B981" opacity="0.8"/>
-                
+                <rect
+                  x="10"
+                  y="20"
+                  width="220"
+                  height="80"
+                  rx="8"
+                  fill="#111827"
+                  stroke="#374151"
+                  stroke-width="2"
+                />
+                <rect
+                  x="20"
+                  y="10"
+                  width="10"
+                  height="10"
+                  fill="#10B981"
+                  opacity="0.8"
+                />
+
                 <!-- Heatsink Fins -->
-                <line x1="40" y1="30" x2="40" y2="90" stroke="#374151" stroke-width="2"/>
-                <line x1="48" y1="30" x2="48" y2="90" stroke="#374151" stroke-width="2"/>
-                <line x1="56" y1="30" x2="56" y2="90" stroke="#374151" stroke-width="2"/>
-                <line x1="64" y1="30" x2="64" y2="90" stroke="#374151" stroke-width="2"/>
-                <line x1="176" y1="30" x2="176" y2="90" stroke="#374151" stroke-width="2"/>
-                <line x1="184" y1="30" x2="184" y2="90" stroke="#374151" stroke-width="2"/>
-                <line x1="192" y1="30" x2="192" y2="90" stroke="#374151" stroke-width="2"/>
-                <line x1="200" y1="30" x2="200" y2="90" stroke="#374151" stroke-width="2"/>
-                
+                <line
+                  x1="40"
+                  y1="30"
+                  x2="40"
+                  y2="90"
+                  stroke="#374151"
+                  stroke-width="2"
+                />
+                <line
+                  x1="48"
+                  y1="30"
+                  x2="48"
+                  y2="90"
+                  stroke="#374151"
+                  stroke-width="2"
+                />
+                <line
+                  x1="56"
+                  y1="30"
+                  x2="56"
+                  y2="90"
+                  stroke="#374151"
+                  stroke-width="2"
+                />
+                <line
+                  x1="64"
+                  y1="30"
+                  x2="64"
+                  y2="90"
+                  stroke="#374151"
+                  stroke-width="2"
+                />
+                <line
+                  x1="176"
+                  y1="30"
+                  x2="176"
+                  y2="90"
+                  stroke="#374151"
+                  stroke-width="2"
+                />
+                <line
+                  x1="184"
+                  y1="30"
+                  x2="184"
+                  y2="90"
+                  stroke="#374151"
+                  stroke-width="2"
+                />
+                <line
+                  x1="192"
+                  y1="30"
+                  x2="192"
+                  y2="90"
+                  stroke="#374151"
+                  stroke-width="2"
+                />
+                <line
+                  x1="200"
+                  y1="30"
+                  x2="200"
+                  y2="90"
+                  stroke="#374151"
+                  stroke-width="2"
+                />
+
                 <!-- Triple Fan Assemblies (Left, Center, Right) -->
                 <!-- Left Fan -->
                 <g class="origin-[80px_60px] group-hover:animate-rotate-slow">
-                  <circle cx="80" cy="60" r="22" fill="#030712" stroke="#1F2937" stroke-width="2"/>
-                  <circle cx="80" cy="60" r="6" fill="#10B981"/>
-                  <path d="M80 38 L80 48 M80 72 L80 82 M58 60 L68 60 M92 60 L102 60" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M64 44 L72 52 M88 68 L96 76 M96 44 L88 52 M72 68 L64 76" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
+                  <circle
+                    cx="80"
+                    cy="60"
+                    r="22"
+                    fill="#030712"
+                    stroke="#1F2937"
+                    stroke-width="2"
+                  />
+                  <circle cx="80" cy="60" r="6" fill="#10B981" />
+                  <path
+                    d="M80 38 L80 48 M80 72 L80 82 M58 60 L68 60 M92 60 L102 60"
+                    stroke="#374151"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M64 44 L72 52 M88 68 L96 76 M96 44 L88 52 M72 68 L64 76"
+                    stroke="#374151"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
                 </g>
 
                 <!-- Center Fan -->
                 <g class="origin-[120px_60px] group-hover:animate-rotate-slow">
-                  <circle cx="120" cy="60" r="22" fill="#030712" stroke="#1F2937" stroke-width="2"/>
-                  <circle cx="120" cy="60" r="6" fill="#10B981"/>
-                  <path d="M120 38 L120 48 M120 72 L120 82 M98 60 L108 60 M132 60 L142 60" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M104 44 L112 52 M128 68 L136 76 M136 44 L128 52 M112 68 L104 76" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
+                  <circle
+                    cx="120"
+                    cy="60"
+                    r="22"
+                    fill="#030712"
+                    stroke="#1F2937"
+                    stroke-width="2"
+                  />
+                  <circle cx="120" cy="60" r="6" fill="#10B981" />
+                  <path
+                    d="M120 38 L120 48 M120 72 L120 82 M98 60 L108 60 M132 60 L142 60"
+                    stroke="#374151"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M104 44 L112 52 M128 68 L136 76 M136 44 L128 52 M112 68 L104 76"
+                    stroke="#374151"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
                 </g>
 
                 <!-- Right Fan -->
                 <g class="origin-[160px_60px] group-hover:animate-rotate-slow">
-                  <circle cx="160" cy="60" r="22" fill="#030712" stroke="#1F2937" stroke-width="2"/>
-                  <circle cx="160" cy="60" r="6" fill="#10B981"/>
-                  <path d="M160 38 L160 48 M160 72 L160 82 M138 60 L148 60 M172 60 L182 60" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M144 44 L152 52 M168 68 L176 76 M176 44 L168 52 M152 68 L144 76" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
+                  <circle
+                    cx="160"
+                    cy="60"
+                    r="22"
+                    fill="#030712"
+                    stroke="#1F2937"
+                    stroke-width="2"
+                  />
+                  <circle cx="160" cy="60" r="6" fill="#10B981" />
+                  <path
+                    d="M160 38 L160 48 M160 72 L160 82 M138 60 L148 60 M172 60 L182 60"
+                    stroke="#374151"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M144 44 L152 52 M168 68 L176 76 M176 44 L168 52 M152 68 L144 76"
+                    stroke="#374151"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
                 </g>
 
                 <!-- Top PCI-E connector -->
-                <rect x="70" y="98" width="100" height="4" fill="#EAB308"/>
+                <rect x="70" y="98" width="100" height="4" fill="#EAB308" />
               </svg>
               <!-- Glowing neon strip -->
-              <div class="absolute bottom-3 left-4 right-4 h-1 bg-gradient-to-r from-emerald-500/10 via-emerald-400 to-cyan-500/10 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></div>
+              <div
+                class="absolute bottom-3 left-4 right-4 h-1 bg-gradient-to-r from-emerald-500/10 via-emerald-400 to-cyan-500/10 shadow-[0_0_8px_rgba(16,185,129,0.8)]"
+              ></div>
             </div>
 
             <!-- Card footer details -->
             <div class="flex justify-between items-center mt-4">
               <div>
-                <span class="text-[10px] text-slate-500 uppercase tracking-wider block">Specs</span>
-                <span class="text-xs font-semibold text-slate-300">32GB GDDR7 | DLSS 4.0</span>
+                <span
+                  class="text-[10px] text-slate-500 uppercase tracking-wider block"
+                  >Specs</span
+                >
+                <span class="text-xs font-semibold text-slate-300"
+                  >32GB GDDR7 | DLSS 4.0</span
+                >
               </div>
               <div class="text-right">
-                <span class="text-[10px] text-slate-500 block">매장 할인가</span>
-                <span class="font-title text-lg font-bold text-emerald-400">$1,999.00</span>
+                <span class="text-[10px] text-slate-500 block"
+                  >매장 할인가</span
+                >
+                <span class="font-title text-lg font-bold text-emerald-400"
+                  >$1,999.00</span
+                >
               </div>
             </div>
-            
-            <button onclick="addToCart(1, 'NVIDIA RTX 5090 FE', 1999, 'RTX 5090')" class="w-full mt-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-2.5 rounded-xl transition-all duration-300 cursor-pointer text-xs">
+
+            <button
+              onclick="addToCart(1, 'NVIDIA RTX 5090 FE', 1999, 'RTX 5090')"
+              class="w-full mt-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-2.5 rounded-xl transition-all duration-300 cursor-pointer text-xs"
+            >
               장바구니 담기
             </button>
           </div>
@@ -310,31 +573,56 @@
     </section>
 
     <!-- 4. GPU PERFORMANCE FINDER WIDGET (적응형 / 계산기 위젯) -->
-    <section id="benchmark" class="py-16 px-4 md:px-8 border-t border-slate-900 bg-[#0e1322]">
+    <section
+      id="benchmark"
+      class="py-16 px-4 md:px-8 border-t border-slate-900 bg-[#0e1322]"
+    >
       <div class="max-w-4xl mx-auto text-center mb-12">
-        <span class="text-xs font-bold text-emerald-500 uppercase tracking-widest font-title block mb-2">GPU Recommendation Widget</span>
-        <h2 class="text-3xl font-bold font-title">내 게이밍 해상도에 맞는 GPU 찾기</h2>
+        <span
+          class="text-xs font-bold text-emerald-500 uppercase tracking-widest font-title block mb-2"
+          >GPU Recommendation Widget</span
+        >
+        <h2 class="text-3xl font-bold font-title">
+          내 게이밍 해상도에 맞는 GPU 찾기
+        </h2>
         <p class="text-slate-400 mt-2 text-sm max-w-lg mx-auto">
-          타겟 해상도와 선호도를 설정해보세요. 제이슨의 알고리즘이 완벽한 그래픽카드를 매칭해 드립니다.
+          타겟 해상도와 선호도를 설정해보세요. 제이슨의 알고리즘이 완벽한
+          그래픽카드를 매칭해 드립니다.
         </p>
       </div>
 
-      <div class="max-w-3xl mx-auto bg-slate-900/50 border border-slate-800 rounded-3xl p-6 md:p-8 glow-emerald">
+      <div
+        class="max-w-3xl mx-auto bg-slate-900/50 border border-slate-800 rounded-3xl p-6 md:p-8 glow-emerald"
+      >
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
           <!-- Control Panel (Flex & Layouts) -->
           <div class="space-y-6 flex flex-col justify-between">
             <!-- Resolution Selector -->
             <div>
-              <label class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-3">1. 모니터 해상도</label>
+              <label
+                class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-3"
+                >1. 모니터 해상도</label
+              >
               <div class="grid grid-cols-3 gap-3" id="res-selector">
-                <button onclick="selectResolution('1080p')" id="btn-1080p" class="py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer">
+                <button
+                  onclick="selectResolution('1080p')"
+                  id="btn-1080p"
+                  class="py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer"
+                >
                   FHD (1080p)
                 </button>
-                <button onclick="selectResolution('1440p')" id="btn-1440p" class="py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 transition-all text-xs font-semibold focus:outline-none cursor-pointer">
+                <button
+                  onclick="selectResolution('1440p')"
+                  id="btn-1440p"
+                  class="py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 transition-all text-xs font-semibold focus:outline-none cursor-pointer"
+                >
                   QHD (1440p)
                 </button>
-                <button onclick="selectResolution('4k')" id="btn-4k" class="py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer">
+                <button
+                  onclick="selectResolution('4k')"
+                  id="btn-4k"
+                  class="py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer"
+                >
                   UHD (4K)
                 </button>
               </div>
@@ -342,12 +630,23 @@
 
             <!-- Graphic Preset Selector -->
             <div>
-              <label class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-3">2. 그래픽 요구수준</label>
+              <label
+                class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-3"
+                >2. 그래픽 요구수준</label
+              >
               <div class="grid grid-cols-2 gap-3" id="preset-selector">
-                <button onclick="selectPreset('normal')" id="btn-normal" class="py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer">
+                <button
+                  onclick="selectPreset('normal')"
+                  id="btn-normal"
+                  class="py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer"
+                >
                   일반 게이밍 (옵션 타협)
                 </button>
-                <button onclick="selectPreset('ultra')" id="btn-ultra" class="py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 transition-all text-xs font-semibold focus:outline-none cursor-pointer">
+                <button
+                  onclick="selectPreset('ultra')"
+                  id="btn-ultra"
+                  class="py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 transition-all text-xs font-semibold focus:outline-none cursor-pointer"
+                >
                   풀옵션 + 레이 트레이싱
                 </button>
               </div>
@@ -355,9 +654,22 @@
 
             <!-- Budget Level -->
             <div>
-              <label class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-2">3. 예산 범위</label>
-              <input type="range" min="1" max="3" value="2" class="w-full accent-emerald-500 bg-slate-950 h-2 rounded-lg appearance-none cursor-pointer" id="budget-range" oninput="calculateRecommendation()">
-              <div class="flex justify-between text-[10px] text-slate-500 mt-1 font-semibold">
+              <label
+                class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-2"
+                >3. 예산 범위</label
+              >
+              <input
+                type="range"
+                min="1"
+                max="3"
+                value="2"
+                class="w-full accent-emerald-500 bg-slate-950 h-2 rounded-lg appearance-none cursor-pointer"
+                id="budget-range"
+                oninput="calculateRecommendation()"
+              />
+              <div
+                class="flex justify-between text-[10px] text-slate-500 mt-1 font-semibold"
+              >
                 <span>보급형 (~$500)</span>
                 <span>퍼포먼스 (~$1,200)</span>
                 <span>하이엔드 ($1,200+)</span>
@@ -366,14 +678,27 @@
           </div>
 
           <!-- Output Panel (Recommendation Card) -->
-          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between min-h-[250px]">
+          <div
+            class="bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between min-h-[250px]"
+          >
             <div>
-              <span class="text-[10px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-bold px-2 py-0.5 rounded-md uppercase tracking-wider">
+              <span
+                class="text-[10px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-bold px-2 py-0.5 rounded-md uppercase tracking-wider"
+              >
                 Recommended Card
               </span>
-              <h3 id="recommend-name" class="font-title text-xl font-bold text-white mt-3">GeForce RTX 5080</h3>
-              <p id="recommend-desc" class="text-xs text-slate-400 mt-2 leading-relaxed">
-                QHD 해상도에서 레이트레이싱 옵션을 켠 상태로 안정적인 144FPS 이상의 플레이가 가능한 차세대 그래픽카드입니다.
+              <h3
+                id="recommend-name"
+                class="font-title text-xl font-bold text-white mt-3"
+              >
+                GeForce RTX 5080
+              </h3>
+              <p
+                id="recommend-desc"
+                class="text-xs text-slate-400 mt-2 leading-relaxed"
+              >
+                QHD 해상도에서 레이트레이싱 옵션을 켠 상태로 안정적인 144FPS
+                이상의 플레이가 가능한 차세대 그래픽카드입니다.
               </p>
             </div>
 
@@ -381,340 +706,717 @@
             <div class="mt-4 pt-4 border-t border-slate-900">
               <div class="flex justify-between text-xs text-slate-400 mb-1">
                 <span>예상 평균 프레임 (FPS)</span>
-                <span id="recommend-fps" class="font-bold text-emerald-400 font-title">165 FPS</span>
+                <span
+                  id="recommend-fps"
+                  class="font-bold text-emerald-400 font-title"
+                  >165 FPS</span
+                >
               </div>
               <div class="w-full bg-slate-900 rounded-full h-2">
-                <div id="recommend-bar" class="bg-gradient-to-r from-emerald-500 to-cyan-400 h-2 rounded-full transition-all duration-500" style="width: 82.5%;"></div>
+                <div
+                  id="recommend-bar"
+                  class="bg-gradient-to-r from-emerald-500 to-cyan-400 h-2 rounded-full transition-all duration-500"
+                  style="width: 82.5%"
+                ></div>
               </div>
             </div>
 
             <div class="mt-4 flex gap-3">
-              <button id="recommend-add-btn" class="flex-1 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-2.5 rounded-xl transition-all duration-300 text-xs cursor-pointer">
+              <button
+                id="recommend-add-btn"
+                class="flex-1 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-2.5 rounded-xl transition-all duration-300 text-xs cursor-pointer"
+              >
                 장바구니 담기
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- 5. MAIN PRODUCTS SECTION (Responsive Layouts & Filters & Flex Cards) -->
     <main id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      
       <!-- Section Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+      <div
+        class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4"
+      >
         <div>
-          <span class="text-xs font-bold text-emerald-500 uppercase tracking-widest font-title block mb-2">Product Lineup</span>
-          <h2 class="text-3xl font-bold font-title">제이슨의 하이엔드 라인업</h2>
+          <span
+            class="text-xs font-bold text-emerald-500 uppercase tracking-widest font-title block mb-2"
+            >Product Lineup</span
+          >
+          <h2 class="text-3xl font-bold font-title">
+            제이슨의 하이엔드 라인업
+          </h2>
         </div>
-        
+
         <!-- Filter Tabs (Flex Layout) -->
         <div class="flex flex-wrap gap-2 text-xs">
-          <button onclick="filterProducts('all')" id="filter-all" class="px-4 py-2 rounded-xl bg-emerald-500 text-slate-950 font-bold transition-all cursor-pointer">
+          <button
+            onclick="filterProducts('all')"
+            id="filter-all"
+            class="px-4 py-2 rounded-xl bg-emerald-500 text-slate-950 font-bold transition-all cursor-pointer"
+          >
             전체 보기
           </button>
-          <button onclick="filterProducts('nvidia')" id="filter-nvidia" class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 transition-all cursor-pointer">
+          <button
+            onclick="filterProducts('nvidia')"
+            id="filter-nvidia"
+            class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 transition-all cursor-pointer"
+          >
             NVIDIA GeForce
           </button>
-          <button onclick="filterProducts('amd')" id="filter-amd" class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 transition-all cursor-pointer">
+          <button
+            onclick="filterProducts('amd')"
+            id="filter-amd"
+            class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 transition-all cursor-pointer"
+          >
             AMD Radeon
           </button>
         </div>
       </div>
 
       <!-- Products Grid (Responsive: 1 -> 2 -> 3 -> 4 columns) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="product-grid">
-        
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+        id="product-grid"
+      >
         <!-- Product 1 (NVIDIA RTX 5090) -->
-        <div class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all duration-300" data-brand="nvidia">
+        <div
+          class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all duration-300"
+          data-brand="nvidia"
+        >
           <!-- Absolute Positioned badge -->
-          <div class="absolute top-3 left-3 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm">
+          <div
+            class="absolute top-3 left-3 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm"
+          >
             NVIDIA FE
           </div>
-          <div class="absolute top-3 right-3 bg-slate-950/80 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10">
+          <div
+            class="absolute top-3 right-3 bg-slate-950/80 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10"
+          >
             재고 있음
           </div>
 
           <!-- Product Image Frame (Custom SVG illustration) -->
-          <div class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60">
-            <svg class="w-48 h-24 text-slate-800" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="15" width="180" height="70" rx="6" fill="#111827" stroke="#374151" stroke-width="2"/>
+          <div
+            class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60"
+          >
+            <svg
+              class="w-48 h-24 text-slate-800"
+              viewBox="0 0 200 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="10"
+                y="15"
+                width="180"
+                height="70"
+                rx="6"
+                fill="#111827"
+                stroke="#374151"
+                stroke-width="2"
+              />
               <g class="origin-[70px_50px] group-hover:animate-rotate-fast">
-                <circle cx="70" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="70" cy="50" r="4" fill="#10B981"/>
-                <path d="M70 32 L70 40 M70 60 L70 68" stroke="#374151" stroke-width="1.5"/>
+                <circle
+                  cx="70"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="70" cy="50" r="4" fill="#10B981" />
+                <path
+                  d="M70 32 L70 40 M70 60 L70 68"
+                  stroke="#374151"
+                  stroke-width="1.5"
+                />
               </g>
               <g class="origin-[130px_50px] group-hover:animate-rotate-fast">
-                <circle cx="130" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="130" cy="50" r="4" fill="#10B981"/>
-                <path d="M130 32 L130 40 M130 60 L130 68" stroke="#374151" stroke-width="1.5"/>
+                <circle
+                  cx="130"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="130" cy="50" r="4" fill="#10B981" />
+                <path
+                  d="M130 32 L130 40 M130 60 L130 68"
+                  stroke="#374151"
+                  stroke-width="1.5"
+                />
               </g>
             </svg>
-            <div class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-emerald-500/20 via-emerald-400 to-emerald-500/20 shadow-md"></div>
+            <div
+              class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-emerald-500/20 via-emerald-400 to-emerald-500/20 shadow-md"
+            ></div>
           </div>
 
           <div>
-            <div class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider">
+            <div
+              class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider"
+            >
               <span>RTX 50 SERIES</span>
               <span>•</span>
               <span>32GB GDDR7</span>
             </div>
-            <h3 class="text-base font-bold text-white mt-1 group-hover:text-emerald-400 transition-colors">NVIDIA GeForce RTX 5090 FE</h3>
+            <h3
+              class="text-base font-bold text-white mt-1 group-hover:text-emerald-400 transition-colors"
+            >
+              NVIDIA GeForce RTX 5090 FE
+            </h3>
             <p class="text-xs text-slate-400 mt-1 leading-relaxed line-clamp-2">
-              최신 Blackwell 아키텍처 기반의 끝판왕 카드. AI 컴퓨팅 및 풀 패스 트레이싱 게임 구동.
+              최신 Blackwell 아키텍처 기반의 끝판왕 카드. AI 컴퓨팅 및 풀 패스
+              트레이싱 게임 구동.
             </p>
           </div>
 
-          <div class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between">
+          <div
+            class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between"
+          >
             <div>
-              <span class="text-[9px] text-slate-500 block uppercase">Price</span>
-              <span class="font-title text-base font-bold text-emerald-400">$1,999.00</span>
+              <span class="text-[9px] text-slate-500 block uppercase"
+                >Price</span
+              >
+              <span class="font-title text-base font-bold text-emerald-400"
+                >$1,999.00</span
+              >
             </div>
-            <button onclick="addToCart(1, 'NVIDIA RTX 5090 FE', 1999, 'RTX 5090')" class="bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 text-slate-200 border border-slate-800 hover:border-emerald-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer">
+            <button
+              onclick="addToCart(1, 'NVIDIA RTX 5090 FE', 1999, 'RTX 5090')"
+              class="bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 text-slate-200 border border-slate-800 hover:border-emerald-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer"
+            >
               담기
             </button>
           </div>
         </div>
 
         <!-- Product 2 (NVIDIA RTX 5080) -->
-        <div class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all duration-300" data-brand="nvidia">
-          <div class="absolute top-3 left-3 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm">
+        <div
+          class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all duration-300"
+          data-brand="nvidia"
+        >
+          <div
+            class="absolute top-3 left-3 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm"
+          >
             NVIDIA
           </div>
-          <div class="absolute top-3 right-3 bg-slate-950/80 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10">
+          <div
+            class="absolute top-3 right-3 bg-slate-950/80 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10"
+          >
             재고 있음
           </div>
 
-          <div class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60">
-            <svg class="w-48 h-24 text-slate-800" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="15" width="180" height="70" rx="6" fill="#111827" stroke="#374151" stroke-width="2"/>
+          <div
+            class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60"
+          >
+            <svg
+              class="w-48 h-24 text-slate-800"
+              viewBox="0 0 200 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="10"
+                y="15"
+                width="180"
+                height="70"
+                rx="6"
+                fill="#111827"
+                stroke="#374151"
+                stroke-width="2"
+              />
               <g class="origin-[70px_50px] group-hover:animate-rotate-fast">
-                <circle cx="70" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="70" cy="50" r="4" fill="#10B981"/>
+                <circle
+                  cx="70"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="70" cy="50" r="4" fill="#10B981" />
               </g>
               <g class="origin-[130px_50px] group-hover:animate-rotate-fast">
-                <circle cx="130" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="130" cy="50" r="4" fill="#10B981"/>
+                <circle
+                  cx="130"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="130" cy="50" r="4" fill="#10B981" />
               </g>
             </svg>
-            <div class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-emerald-500/20 via-emerald-400 to-emerald-500/20 shadow-md"></div>
+            <div
+              class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-emerald-500/20 via-emerald-400 to-emerald-500/20 shadow-md"
+            ></div>
           </div>
 
           <div>
-            <div class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider">
+            <div
+              class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider"
+            >
               <span>RTX 50 SERIES</span>
               <span>•</span>
               <span>16GB GDDR7</span>
             </div>
-            <h3 class="text-base font-bold text-white mt-1 group-hover:text-emerald-400 transition-colors">NVIDIA GeForce RTX 5080</h3>
+            <h3
+              class="text-base font-bold text-white mt-1 group-hover:text-emerald-400 transition-colors"
+            >
+              NVIDIA GeForce RTX 5080
+            </h3>
             <p class="text-xs text-slate-400 mt-1 leading-relaxed line-clamp-2">
-              최고 수준의 QHD 게이밍 및 엔트리 4K 레이트레이싱 환경을 보증하는 베스트셀러 모델.
+              최고 수준의 QHD 게이밍 및 엔트리 4K 레이트레이싱 환경을 보증하는
+              베스트셀러 모델.
             </p>
           </div>
 
-          <div class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between">
+          <div
+            class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between"
+          >
             <div>
-              <span class="text-[9px] text-slate-500 block uppercase">Price</span>
-              <span class="font-title text-base font-bold text-emerald-400">$1,199.00</span>
+              <span class="text-[9px] text-slate-500 block uppercase"
+                >Price</span
+              >
+              <span class="font-title text-base font-bold text-emerald-400"
+                >$1,199.00</span
+              >
             </div>
-            <button onclick="addToCart(2, 'NVIDIA RTX 5080', 1199, 'RTX 5080')" class="bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 text-slate-200 border border-slate-800 hover:border-emerald-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer">
+            <button
+              onclick="addToCart(2, 'NVIDIA RTX 5080', 1199, 'RTX 5080')"
+              class="bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 text-slate-200 border border-slate-800 hover:border-emerald-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer"
+            >
               담기
             </button>
           </div>
         </div>
 
         <!-- Product 3 (AMD Radeon RX 8900 XTX) -->
-        <div class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-purple-500/40 hover:shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300" data-brand="amd">
-          <div class="absolute top-3 left-3 bg-purple-600 text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm">
+        <div
+          class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-purple-500/40 hover:shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300"
+          data-brand="amd"
+        >
+          <div
+            class="absolute top-3 left-3 bg-purple-600 text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm"
+          >
             AMD Radeon
           </div>
-          <div class="absolute top-3 right-3 bg-slate-950/80 text-rose-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10">
+          <div
+            class="absolute top-3 right-3 bg-slate-950/80 text-rose-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10"
+          >
             품절 임박
           </div>
 
-          <div class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60">
-            <svg class="w-48 h-24 text-slate-800" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="15" width="180" height="70" rx="6" fill="#111827" stroke="#374151" stroke-width="2"/>
+          <div
+            class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60"
+          >
+            <svg
+              class="w-48 h-24 text-slate-800"
+              viewBox="0 0 200 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="10"
+                y="15"
+                width="180"
+                height="70"
+                rx="6"
+                fill="#111827"
+                stroke="#374151"
+                stroke-width="2"
+              />
               <g class="origin-[70px_50px] group-hover:animate-rotate-fast">
-                <circle cx="70" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="70" cy="50" r="4" fill="#8B5CF6"/>
+                <circle
+                  cx="70"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="70" cy="50" r="4" fill="#8B5CF6" />
               </g>
               <g class="origin-[130px_50px] group-hover:animate-rotate-fast">
-                <circle cx="130" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="130" cy="50" r="4" fill="#8B5CF6"/>
+                <circle
+                  cx="130"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="130" cy="50" r="4" fill="#8B5CF6" />
               </g>
             </svg>
-            <div class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-purple-500/20 via-purple-400 to-purple-500/20 shadow-md"></div>
+            <div
+              class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-purple-500/20 via-purple-400 to-purple-500/20 shadow-md"
+            ></div>
           </div>
 
           <div>
-            <div class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider">
+            <div
+              class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider"
+            >
               <span>RDNA 4</span>
               <span>•</span>
               <span>24GB GDDR7</span>
             </div>
-            <h3 class="text-base font-bold text-white mt-1 group-hover:text-purple-400 transition-colors">AMD Radeon RX 8900 XTX</h3>
+            <h3
+              class="text-base font-bold text-white mt-1 group-hover:text-purple-400 transition-colors"
+            >
+              AMD Radeon RX 8900 XTX
+            </h3>
             <p class="text-xs text-slate-400 mt-1 leading-relaxed line-clamp-2">
-              최상의 깡성능과 압도적인 24GB VRAM을 제공하는 AMD의 차세대 플래그십 그래픽카드.
+              최상의 깡성능과 압도적인 24GB VRAM을 제공하는 AMD의 차세대
+              플래그십 그래픽카드.
             </p>
           </div>
 
-          <div class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between">
+          <div
+            class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between"
+          >
             <div>
-              <span class="text-[9px] text-slate-500 block uppercase">Price</span>
-              <span class="font-title text-base font-bold text-purple-400">$999.00</span>
+              <span class="text-[9px] text-slate-500 block uppercase"
+                >Price</span
+              >
+              <span class="font-title text-base font-bold text-purple-400"
+                >$999.00</span
+              >
             </div>
-            <button onclick="addToCart(3, 'AMD Radeon RX 8900 XTX', 999, 'RX 8900 XTX')" class="bg-slate-900 hover:bg-purple-600 hover:text-white text-slate-200 border border-slate-800 hover:border-purple-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer">
+            <button
+              onclick="
+                addToCart(3, 'AMD Radeon RX 8900 XTX', 999, 'RX 8900 XTX')
+              "
+              class="bg-slate-900 hover:bg-purple-600 hover:text-white text-slate-200 border border-slate-800 hover:border-purple-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer"
+            >
               담기
             </button>
           </div>
         </div>
 
         <!-- Product 4 (NVIDIA RTX 4070 Super) -->
-        <div class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all duration-300" data-brand="nvidia">
-          <div class="absolute top-3 left-3 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm">
+        <div
+          class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all duration-300"
+          data-brand="nvidia"
+        >
+          <div
+            class="absolute top-3 left-3 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm"
+          >
             NVIDIA
           </div>
-          <div class="absolute top-3 right-3 bg-slate-950/80 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10">
+          <div
+            class="absolute top-3 right-3 bg-slate-950/80 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10"
+          >
             재고 있음
           </div>
 
-          <div class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60">
-            <svg class="w-48 h-24 text-slate-800" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="15" width="180" height="70" rx="6" fill="#111827" stroke="#374151" stroke-width="2"/>
+          <div
+            class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60"
+          >
+            <svg
+              class="w-48 h-24 text-slate-800"
+              viewBox="0 0 200 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="10"
+                y="15"
+                width="180"
+                height="70"
+                rx="6"
+                fill="#111827"
+                stroke="#374151"
+                stroke-width="2"
+              />
               <g class="origin-[70px_50px] group-hover:animate-rotate-fast">
-                <circle cx="70" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="70" cy="50" r="4" fill="#10B981"/>
+                <circle
+                  cx="70"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="70" cy="50" r="4" fill="#10B981" />
               </g>
               <g class="origin-[130px_50px] group-hover:animate-rotate-fast">
-                <circle cx="130" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="130" cy="50" r="4" fill="#10B981"/>
+                <circle
+                  cx="130"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="130" cy="50" r="4" fill="#10B981" />
               </g>
             </svg>
-            <div class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-emerald-500/20 via-emerald-400 to-emerald-500/20 shadow-md"></div>
+            <div
+              class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-emerald-500/20 via-emerald-400 to-emerald-500/20 shadow-md"
+            ></div>
           </div>
 
           <div>
-            <div class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider">
+            <div
+              class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider"
+            >
               <span>RTX 40 SERIES</span>
               <span>•</span>
               <span>12GB GDDR6X</span>
             </div>
-            <h3 class="text-base font-bold text-white mt-1 group-hover:text-emerald-400 transition-colors">NVIDIA GeForce RTX 4070 Super</h3>
+            <h3
+              class="text-base font-bold text-white mt-1 group-hover:text-emerald-400 transition-colors"
+            >
+              NVIDIA GeForce RTX 4070 Super
+            </h3>
             <p class="text-xs text-slate-400 mt-1 leading-relaxed line-clamp-2">
               최고의 전성비와 가성비를 확보한 QHD 게이밍의 표준 그래픽카드.
             </p>
           </div>
 
-          <div class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between">
+          <div
+            class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between"
+          >
             <div>
-              <span class="text-[9px] text-slate-500 block uppercase">Price</span>
-              <span class="font-title text-base font-bold text-emerald-400">$599.00</span>
+              <span class="text-[9px] text-slate-500 block uppercase"
+                >Price</span
+              >
+              <span class="font-title text-base font-bold text-emerald-400"
+                >$599.00</span
+              >
             </div>
-            <button onclick="addToCart(4, 'NVIDIA RTX 4070 Super', 599, 'RTX 4070 Super')" class="bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 text-slate-200 border border-slate-800 hover:border-emerald-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer">
+            <button
+              onclick="
+                addToCart(4, 'NVIDIA RTX 4070 Super', 599, 'RTX 4070 Super')
+              "
+              class="bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 text-slate-200 border border-slate-800 hover:border-emerald-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer"
+            >
               담기
             </button>
           </div>
         </div>
 
         <!-- Product 5 (AMD Radeon RX 7800 XT) -->
-        <div class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-purple-500/40 hover:shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300" data-brand="amd">
-          <div class="absolute top-3 left-3 bg-purple-600 text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm">
+        <div
+          class="product-card group relative bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col justify-between hover:border-purple-500/40 hover:shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300"
+          data-brand="amd"
+        >
+          <div
+            class="absolute top-3 left-3 bg-purple-600 text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm"
+          >
             AMD Radeon
           </div>
-          <div class="absolute top-3 right-3 bg-slate-950/80 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10">
+          <div
+            class="absolute top-3 right-3 bg-slate-950/80 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded-md border border-slate-800 z-10"
+          >
             재고 있음
           </div>
 
-          <div class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60">
-            <svg class="w-48 h-24 text-slate-800" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="15" width="180" height="70" rx="6" fill="#111827" stroke="#374151" stroke-width="2"/>
+          <div
+            class="w-full h-40 bg-slate-950 rounded-xl mb-4 relative overflow-hidden flex items-center justify-center border border-slate-800/60"
+          >
+            <svg
+              class="w-48 h-24 text-slate-800"
+              viewBox="0 0 200 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="10"
+                y="15"
+                width="180"
+                height="70"
+                rx="6"
+                fill="#111827"
+                stroke="#374151"
+                stroke-width="2"
+              />
               <g class="origin-[70px_50px] group-hover:animate-rotate-fast">
-                <circle cx="70" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="70" cy="50" r="4" fill="#8B5CF6"/>
+                <circle
+                  cx="70"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="70" cy="50" r="4" fill="#8B5CF6" />
               </g>
               <g class="origin-[130px_50px] group-hover:animate-rotate-fast">
-                <circle cx="130" cy="50" r="18" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
-                <circle cx="130" cy="50" r="4" fill="#8B5CF6"/>
+                <circle
+                  cx="130"
+                  cy="50"
+                  r="18"
+                  fill="#030712"
+                  stroke="#1F2937"
+                  stroke-width="1.5"
+                />
+                <circle cx="130" cy="50" r="4" fill="#8B5CF6" />
               </g>
             </svg>
-            <div class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-purple-500/20 via-purple-400 to-purple-500/20 shadow-md"></div>
+            <div
+              class="absolute bottom-2 left-3 right-3 h-0.5 bg-gradient-to-r from-purple-500/20 via-purple-400 to-purple-500/20 shadow-md"
+            ></div>
           </div>
 
           <div>
-            <div class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider">
+            <div
+              class="flex items-center gap-1.5 text-[10px] text-slate-500 font-bold tracking-wider"
+            >
               <span>RDNA 3</span>
               <span>•</span>
               <span>16GB GDDR6</span>
             </div>
-            <h3 class="text-base font-bold text-white mt-1 group-hover:text-purple-400 transition-colors">AMD Radeon RX 7800 XT</h3>
+            <h3
+              class="text-base font-bold text-white mt-1 group-hover:text-purple-400 transition-colors"
+            >
+              AMD Radeon RX 7800 XT
+            </h3>
             <p class="text-xs text-slate-400 mt-1 leading-relaxed line-clamp-2">
-              합리적인 가격으로 16GB 대용량 비디오 메모리와 탄탄한 중고사양 게임 성능 제공.
+              합리적인 가격으로 16GB 대용량 비디오 메모리와 탄탄한 중고사양 게임
+              성능 제공.
             </p>
           </div>
 
-          <div class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between">
+          <div
+            class="mt-4 pt-4 border-t border-slate-900 flex items-center justify-between"
+          >
             <div>
-              <span class="text-[9px] text-slate-500 block uppercase">Price</span>
-              <span class="font-title text-base font-bold text-purple-400">$499.00</span>
+              <span class="text-[9px] text-slate-500 block uppercase"
+                >Price</span
+              >
+              <span class="font-title text-base font-bold text-purple-400"
+                >$499.00</span
+              >
             </div>
-            <button onclick="addToCart(5, 'AMD Radeon RX 7800 XT', 499, 'RX 7800 XT')" class="bg-slate-900 hover:bg-purple-600 hover:text-white text-slate-200 border border-slate-800 hover:border-purple-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer">
+            <button
+              onclick="addToCart(5, 'AMD Radeon RX 7800 XT', 499, 'RX 7800 XT')"
+              class="bg-slate-900 hover:bg-purple-600 hover:text-white text-slate-200 border border-slate-800 hover:border-purple-500 px-3.5 py-2 rounded-xl transition-all duration-300 text-xs font-bold cursor-pointer"
+            >
               담기
             </button>
           </div>
         </div>
-
       </div>
     </main>
 
     <!-- 6. INFORMATION SECTION (Grid layout & Adaptive details) -->
-    <section id="about" class="py-16 px-4 md:px-8 border-t border-slate-900 bg-slate-950/40 relative">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section
+      id="about"
+      class="py-16 px-4 md:px-8 border-t border-slate-900 bg-slate-950/40 relative"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+      >
         <div>
-          <span class="text-xs font-bold text-emerald-500 uppercase tracking-widest font-title block mb-2">STORE DETAILS</span>
-          <h2 class="text-3xl font-bold font-title mb-6">제이슨의 컴퓨터가게는 다릅니다</h2>
-          
+          <span
+            class="text-xs font-bold text-emerald-500 uppercase tracking-widest font-title block mb-2"
+            >STORE DETAILS</span
+          >
+          <h2 class="text-3xl font-bold font-title mb-6">
+            제이슨의 컴퓨터가게는 다릅니다
+          </h2>
+
           <div class="space-y-6">
             <div class="flex gap-4">
-              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-400">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              <div
+                class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-emerald-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+                  />
                 </svg>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white">100% 정품 유통망 확보</h4>
+                <h4 class="text-sm font-bold text-white">
+                  100% 정품 유통망 확보
+                </h4>
                 <p class="text-xs text-slate-400 mt-1 leading-relaxed">
-                  국내 공식 수입사 유통 제품만을 취급하여 가품 걱정이 없습니다. 초기 불량 시 1:1 즉시 새제품 교환을 약속드립니다.
+                  국내 공식 수입사 유통 제품만을 취급하여 가품 걱정이 없습니다.
+                  초기 불량 시 1:1 즉시 새제품 교환을 약속드립니다.
                 </p>
               </div>
             </div>
 
             <div class="flex gap-4">
-              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-400">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.12-1.243l1.105-9.4A1.125 1.125 0 0 1 4.482 7.5h15.036a1.125 1.125 0 0 1 1.12 1.243l-1.105 9.4a1.125 1.125 0 0 1-1.12 1.243M15 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.5m-7.5-7.5h7.5" />
+              <div
+                class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-emerald-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.12-1.243l1.105-9.4A1.125 1.125 0 0 1 4.482 7.5h15.036a1.125 1.125 0 0 1 1.12 1.243l-1.105 9.4a1.125 1.125 0 0 1-1.12 1.243M15 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.5m-7.5-7.5h7.5"
+                  />
                 </svg>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white">전국 당일 퀵 서비스 & 안전 안심 포장</h4>
+                <h4 class="text-sm font-bold text-white">
+                  전국 당일 퀵 서비스 & 안전 안심 포장
+                </h4>
                 <p class="text-xs text-slate-400 mt-1 leading-relaxed">
-                  고가의 하드웨어 특성에 맞추어 다중 에어캡 안심 포장을 적용하며, 수도권의 경우 당일 퀵서비스 수령이 가능합니다.
+                  고가의 하드웨어 특성에 맞추어 다중 에어캡 안심 포장을
+                  적용하며, 수도권의 경우 당일 퀵서비스 수령이 가능합니다.
                 </p>
               </div>
             </div>
 
             <div class="flex gap-4">
-              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-400">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.65 2.65 0 0 0 21 17.25l-5.83-5.83m-9.75 0a2.65 2.65 0 1 1 3.75-3.75 2.65 2.65 0 0 1-3.75 3.75Z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 4.75 18.25 8.75M9.25 14.75 4.75 19.25" />
+              <div
+                class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-emerald-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.42 15.17 17.25 21A2.65 2.65 0 0 0 21 17.25l-5.83-5.83m-9.75 0a2.65 2.65 0 1 1 3.75-3.75 2.65 2.65 0 0 1-3.75 3.75Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.25 4.75 18.25 8.75M9.25 14.75 4.75 19.25"
+                  />
                 </svg>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white">커스텀 오버클럭 및 하드웨어 가이드</h4>
+                <h4 class="text-sm font-bold text-white">
+                  커스텀 오버클럭 및 하드웨어 가이드
+                </h4>
                 <p class="text-xs text-slate-400 mt-1 leading-relaxed">
-                  단순 판매로 끝나지 않고 모니터링 세팅 및 하드웨어 장착/성능 최적화 솔루션을 동반 제공합니다.
+                  단순 판매로 끝나지 않고 모니터링 세팅 및 하드웨어 장착/성능
+                  최적화 솔루션을 동반 제공합니다.
                 </p>
               </div>
             </div>
@@ -722,19 +1424,32 @@
         </div>
 
         <!-- Right Visual Showcase (Futuristic Graphic Card Visual with HTML/CSS) -->
-        <div class="bg-slate-900/40 border border-slate-800 rounded-3xl p-8 flex flex-col items-center justify-center min-h-[350px] relative overflow-hidden">
-          <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-emerald-500/5 filter blur-2xl"></div>
-          
-          <div class="relative w-full max-w-sm bg-slate-950/80 border border-slate-800 p-6 rounded-2xl">
+        <div
+          class="bg-slate-900/40 border border-slate-800 rounded-3xl p-8 flex flex-col items-center justify-center min-h-[350px] relative overflow-hidden"
+        >
+          <div
+            class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-emerald-500/5 filter blur-2xl"
+          ></div>
+
+          <div
+            class="relative w-full max-w-sm bg-slate-950/80 border border-slate-800 p-6 rounded-2xl"
+          >
             <!-- GPU Port View visual -->
-            <div class="flex justify-between items-center pb-4 border-b border-slate-800 mb-4">
-              <span class="text-[10px] font-bold text-slate-500 font-title uppercase">Connector Side</span>
+            <div
+              class="flex justify-between items-center pb-4 border-b border-slate-800 mb-4"
+            >
+              <span
+                class="text-[10px] font-bold text-slate-500 font-title uppercase"
+                >Connector Side</span
+              >
               <div class="flex gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-slate-800"></span>
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span
+                  class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"
+                ></span>
               </div>
             </div>
-            
+
             <div class="space-y-3">
               <div class="flex justify-between text-xs">
                 <span class="text-slate-400">인터페이스</span>
@@ -742,7 +1457,9 @@
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-slate-400">디스플레이 출력</span>
-                <span class="text-white font-semibold">HDMI 2.1a x1, DP 2.1 x3</span>
+                <span class="text-white font-semibold"
+                  >HDMI 2.1a x1, DP 2.1 x3</span
+                >
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-slate-400">권장 파워용량</span>
@@ -755,8 +1472,12 @@
             </div>
 
             <!-- Dynamic Interactive Tooltip Mockup -->
-            <div class="mt-5 p-3 rounded-lg bg-emerald-500/5 border border-emerald-500/20 text-[11px] text-emerald-400/90 leading-relaxed">
-              💡 <strong>구매 팁:</strong> 최근 입고된 RTX 50시리즈는 이전 규격 케이블 연결 시 멜팅 현상이 방지된 개선형 12V-2x6 포트가 제공됩니다. 안심하고 장착하세요.
+            <div
+              class="mt-5 p-3 rounded-lg bg-emerald-500/5 border border-emerald-500/20 text-[11px] text-emerald-400/90 leading-relaxed"
+            >
+              💡 <strong>구매 팁:</strong> 최근 입고된 RTX 50시리즈는 이전 규격
+              케이블 연결 시 멜팅 현상이 방지된 개선형 12V-2x6 포트가
+              제공됩니다. 안심하고 장착하세요.
             </div>
           </div>
         </div>
@@ -764,29 +1485,77 @@
     </section>
 
     <!-- 7. SLIDING CART DRAWER (Position Fixed, state handled by JS) -->
-    <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full sm:w-96 bg-slate-950/98 backdrop-blur-md border-l border-slate-800 shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between">
-      
+    <div
+      id="cart-drawer"
+      class="fixed top-0 right-0 h-full w-full sm:w-96 bg-slate-950/98 backdrop-blur-md border-l border-slate-800 shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between"
+    >
       <!-- Drawer Header (Flex) -->
-      <div class="p-6 border-b border-slate-900 flex items-center justify-between">
+      <div
+        class="p-6 border-b border-slate-900 flex items-center justify-between"
+      >
         <div class="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-400">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-6 h-6 text-emerald-400"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+            />
           </svg>
-          <span class="font-title text-lg font-bold text-white">쇼핑 장바구니</span>
+          <span class="font-title text-lg font-bold text-white"
+            >쇼핑 장바구니</span
+          >
         </div>
-        <button id="cart-close-btn" class="p-1 text-slate-400 hover:text-white transition-colors cursor-pointer">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        <button
+          id="cart-close-btn"
+          class="p-1 text-slate-400 hover:text-white transition-colors cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
           </svg>
         </button>
       </div>
 
       <!-- Drawer Content (Flex Auto Scroll) -->
-      <div id="cart-items-container" class="p-6 flex-1 overflow-y-auto space-y-4">
+      <div
+        id="cart-items-container"
+        class="p-6 flex-1 overflow-y-auto space-y-4"
+      >
         <!-- Default Empty State -->
-        <div id="cart-empty-state" class="h-full flex flex-col items-center justify-center text-center text-slate-500 py-12">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mb-3 opacity-30">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        <div
+          id="cart-empty-state"
+          class="h-full flex flex-col items-center justify-center text-center text-slate-500 py-12"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 h-12 mb-3 opacity-30"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+            />
           </svg>
           <p class="text-sm">장바구니가 비어 있습니다.</p>
           <p class="text-xs mt-1">원하는 GPU 모델을 담아보세요.</p>
@@ -799,34 +1568,55 @@
       <div class="p-6 border-t border-slate-900 bg-slate-950 space-y-4">
         <div class="flex justify-between items-center text-sm font-semibold">
           <span class="text-slate-400">총 결제 금액:</span>
-          <span id="cart-total-price" class="font-title text-xl font-bold text-emerald-400">$0.00</span>
+          <span
+            id="cart-total-price"
+            class="font-title text-xl font-bold text-emerald-400"
+            >$0.00</span
+          >
         </div>
-        <button id="checkout-btn" class="w-full bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-bold py-3.5 rounded-xl hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all cursor-pointer text-center text-sm">
+        <button
+          id="checkout-btn"
+          class="w-full bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-bold py-3.5 rounded-xl hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all cursor-pointer text-center text-sm"
+        >
           주문 결제하기
         </button>
       </div>
     </div>
 
     <!-- TOAST NOTIFICATION WIDGET -->
-    <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 border border-emerald-500/30 text-slate-200 px-5 py-3.5 rounded-2xl shadow-xl z-50 transform translate-y-24 opacity-0 transition-all duration-300 flex items-center gap-3">
+    <div
+      id="toast"
+      class="fixed bottom-6 right-6 bg-slate-900 border border-emerald-500/30 text-slate-200 px-5 py-3.5 rounded-2xl shadow-xl z-50 transform translate-y-24 opacity-0 transition-all duration-300 flex items-center gap-3"
+    >
       <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
-      <span id="toast-message" class="text-xs font-semibold">장바구니에 아이템이 추가되었습니다.</span>
+      <span id="toast-message" class="text-xs font-semibold"
+        >장바구니에 아이템이 추가되었습니다.</span
+      >
     </div>
 
     <!-- 8. FOOTER (Responsive Grid layout) -->
-    <footer id="contact" class="bg-slate-950 border-t border-slate-900 py-16 px-4 md:px-8">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-        
+    <footer
+      id="contact"
+      class="bg-slate-950 border-t border-slate-900 py-16 px-4 md:px-8"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"
+      >
         <!-- Column 1: Info (Flex) -->
         <div class="flex flex-col space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 font-bold font-title">
+            <div
+              class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 font-bold font-title"
+            >
               J
             </div>
-            <span class="font-title text-lg font-bold text-white tracking-wider">JASON'S GPU</span>
+            <span class="font-title text-lg font-bold text-white tracking-wider"
+              >JASON'S GPU</span
+            >
           </div>
           <p class="text-xs text-slate-500 leading-relaxed">
-            제이슨의 컴퓨터가게는 최상위 게이밍 그래픽카드와 인공지능 워크스테이션 설계 솔루션을 전문 유통합니다.
+            제이슨의 컴퓨터가게는 최상위 게이밍 그래픽카드와 인공지능
+            워크스테이션 설계 솔루션을 전문 유통합니다.
           </p>
           <p class="text-xs text-slate-500">
             사업자등록번호: 123-45-67890 <br />
@@ -836,44 +1626,89 @@
 
         <!-- Column 2: Quick Links (Flex) -->
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4 font-title">Quick Navigation</h4>
+          <h4
+            class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4 font-title"
+          >
+            Quick Navigation
+          </h4>
           <ul class="space-y-2.5 text-xs text-slate-500 font-medium">
-            <li><a href="#products" class="hover:text-emerald-400 transition-colors">전체 그래픽카드</a></li>
-            <li><a href="#benchmark" class="hover:text-emerald-400 transition-colors">성능 분석 계산기</a></li>
-            <li><a href="#about" class="hover:text-emerald-400 transition-colors">매장 정품 보증 정책</a></li>
-            <li><a href="#contact" class="hover:text-emerald-400 transition-colors">1:1 온라인 기술지원</a></li>
+            <li>
+              <a
+                href="#products"
+                class="hover:text-emerald-400 transition-colors"
+                >전체 그래픽카드</a
+              >
+            </li>
+            <li>
+              <a
+                href="#benchmark"
+                class="hover:text-emerald-400 transition-colors"
+                >성능 분석 계산기</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="hover:text-emerald-400 transition-colors"
+                >매장 정품 보증 정책</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-emerald-400 transition-colors"
+                >1:1 온라인 기술지원</a
+              >
+            </li>
           </ul>
         </div>
 
         <!-- Column 3: Contact Info (Flex) -->
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4 font-title">Store Hours</h4>
+          <h4
+            class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4 font-title"
+          >
+            Store Hours
+          </h4>
           <ul class="space-y-2.5 text-xs text-slate-500 font-medium">
             <li>평일: 오전 10:00 - 오후 07:00</li>
             <li>토요일: 오전 10:00 - 오후 04:00</li>
             <li>일요일 및 공휴일 휴무</li>
-            <li class="pt-2 text-emerald-400 font-bold">카카오톡 문의: @jason_gpu</li>
+            <li class="pt-2 text-emerald-400 font-bold">
+              카카오톡 문의: @jason_gpu
+            </li>
           </ul>
         </div>
 
         <!-- Column 4: Newsletter (Flex) -->
         <div class="flex flex-col space-y-4">
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 font-title">재고 입고 알림 신청</h4>
+          <h4
+            class="text-xs font-bold uppercase tracking-wider text-slate-300 font-title"
+          >
+            재고 입고 알림 신청
+          </h4>
           <p class="text-xs text-slate-500 leading-relaxed">
-            인기 신규 그래픽카드(RTX 5090 등)의 재입고 소식을 이메일로 받아보세요.
+            인기 신규 그래픽카드(RTX 5090 등)의 재입고 소식을 이메일로
+            받아보세요.
           </p>
           <div class="flex gap-2">
-            <input type="email" placeholder="이메일 주소 입력" class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors">
-            <button onclick="showToast('알림 등록이 완료되었습니다.')" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-3 py-2 rounded-xl text-xs transition-colors cursor-pointer">
+            <input
+              type="email"
+              placeholder="이메일 주소 입력"
+              class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors"
+            />
+            <button
+              onclick="showToast('알림 등록이 완료되었습니다.')"
+              class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-3 py-2 rounded-xl text-xs transition-colors cursor-pointer"
+            >
               신청
             </button>
           </div>
         </div>
-
       </div>
 
       <!-- Copyright -->
-      <div class="max-w-7xl mx-auto pt-12 mt-12 border-t border-slate-900/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-4">
+      <div
+        class="max-w-7xl mx-auto pt-12 mt-12 border-t border-slate-900/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-4"
+      >
         <span>© 2026 JASON'S COMPUTER STORE. All rights reserved.</span>
         <div class="flex gap-6">
           <a href="#" class="hover:text-slate-400">이용약관</a>
@@ -886,63 +1721,122 @@
     <script>
       // 1. STATE VARIABLES
       let cart = [];
-      let activeResolution = '1440p';
-      let activePreset = 'ultra';
+      let activeResolution = "1440p";
+      let activePreset = "ultra";
 
       // GPU Models specs for matcher widget
       const gpuData = [
-        { name: 'NVIDIA GeForce RTX 4070 Super', price: 599, fps: 95, desc: 'FHD 해상도에서 풀옵션을 완벽하게 즐기거나 QHD 환경에서 옵션 조율을 하기에 적합한 가성비 GPU입니다.', brand: 'nvidia', budget: 2, res1080p: { normal: 180, ultra: 120 }, res1440p: { normal: 120, ultra: 85 }, res4k: { normal: 60, ultra: 45 } },
-        { name: 'AMD Radeon RX 7800 XT', price: 499, fps: 90, desc: '16GB 비디오 메모리를 보유하여 대용량 텍스처를 요구하는 스팀 게임을 합리적인 예산에서 즐기실 수 있습니다.', brand: 'amd', budget: 1, res1080p: { normal: 170, ultra: 110 }, res1440p: { normal: 115, ultra: 80 }, res4k: { normal: 55, ultra: 38 } },
-        { name: 'NVIDIA GeForce RTX 5080', price: 1199, fps: 165, desc: '최신 블랙웰 아키텍처 기반으로 QHD 해상도 풀옵션 구동 및 초고사양 4K 게이밍 진입을 위한 최고의 카드입니다.', brand: 'nvidia', budget: 2, res1080p: { normal: 260, ultra: 200 }, res1440p: { normal: 190, ultra: 155 }, res4k: { normal: 105, ultra: 82 } },
-        { name: 'AMD Radeon RX 8900 XTX', price: 999, fps: 150, desc: '24GB 초고용량 GDDR7 메모리와 강력한 연산 능력으로, 고대역폭 그래픽 작업을 동반하는 게이머에게 완벽합니다.', brand: 'amd', budget: 2, res1080p: { normal: 240, ultra: 180 }, res1440p: { normal: 180, ultra: 140 }, res4k: { normal: 95, ultra: 76 } },
-        { name: 'NVIDIA GeForce RTX 5090 FE', price: 1999, fps: 220, desc: '현존 최강의 독보적인 그래픽 카드로, 4K 해상도 풀 레이트레이싱 옵션에서도 타협 없는 최고의 프레임을 출력합니다.', brand: 'nvidia', budget: 3, res1080p: { normal: 360, ultra: 280 }, res1440p: { normal: 280, ultra: 220 }, res4k: { normal: 160, ultra: 135 } }
+        {
+          name: "NVIDIA GeForce RTX 4070 Super",
+          price: 599,
+          fps: 95,
+          desc: "FHD 해상도에서 풀옵션을 완벽하게 즐기거나 QHD 환경에서 옵션 조율을 하기에 적합한 가성비 GPU입니다.",
+          brand: "nvidia",
+          budget: 2,
+          res1080p: { normal: 180, ultra: 120 },
+          res1440p: { normal: 120, ultra: 85 },
+          res4k: { normal: 60, ultra: 45 },
+        },
+        {
+          name: "AMD Radeon RX 7800 XT",
+          price: 499,
+          fps: 90,
+          desc: "16GB 비디오 메모리를 보유하여 대용량 텍스처를 요구하는 스팀 게임을 합리적인 예산에서 즐기실 수 있습니다.",
+          brand: "amd",
+          budget: 1,
+          res1080p: { normal: 170, ultra: 110 },
+          res1440p: { normal: 115, ultra: 80 },
+          res4k: { normal: 55, ultra: 38 },
+        },
+        {
+          name: "NVIDIA GeForce RTX 5080",
+          price: 1199,
+          fps: 165,
+          desc: "최신 블랙웰 아키텍처 기반으로 QHD 해상도 풀옵션 구동 및 초고사양 4K 게이밍 진입을 위한 최고의 카드입니다.",
+          brand: "nvidia",
+          budget: 2,
+          res1080p: { normal: 260, ultra: 200 },
+          res1440p: { normal: 190, ultra: 155 },
+          res4k: { normal: 105, ultra: 82 },
+        },
+        {
+          name: "AMD Radeon RX 8900 XTX",
+          price: 999,
+          fps: 150,
+          desc: "24GB 초고용량 GDDR7 메모리와 강력한 연산 능력으로, 고대역폭 그래픽 작업을 동반하는 게이머에게 완벽합니다.",
+          brand: "amd",
+          budget: 2,
+          res1080p: { normal: 240, ultra: 180 },
+          res1440p: { normal: 180, ultra: 140 },
+          res4k: { normal: 95, ultra: 76 },
+        },
+        {
+          name: "NVIDIA GeForce RTX 5090 FE",
+          price: 1999,
+          fps: 220,
+          desc: "현존 최강의 독보적인 그래픽 카드로, 4K 해상도 풀 레이트레이싱 옵션에서도 타협 없는 최고의 프레임을 출력합니다.",
+          brand: "nvidia",
+          budget: 3,
+          res1080p: { normal: 360, ultra: 280 },
+          res1440p: { normal: 280, ultra: 220 },
+          res4k: { normal: 160, ultra: 135 },
+        },
       ];
 
       // 2. INITIALIZATION
-      window.addEventListener('DOMContentLoaded', () => {
+      window.addEventListener("DOMContentLoaded", () => {
         calculateRecommendation();
         setupCartEventListeners();
       });
 
       // 3. CART EVENT LISTENERS
       function setupCartEventListeners() {
-        const cartToggle = document.getElementById('cart-toggle-btn');
-        const cartClose = document.getElementById('cart-close-btn');
-        const cartDrawer = document.getElementById('cart-drawer');
-        const checkoutBtn = document.getElementById('checkout-btn');
+        const cartToggle = document.getElementById("cart-toggle-btn");
+        const cartClose = document.getElementById("cart-close-btn");
+        const cartDrawer = document.getElementById("cart-drawer");
+        const checkoutBtn = document.getElementById("checkout-btn");
 
-        cartToggle.addEventListener('click', () => {
-          cartDrawer.classList.remove('translate-x-full');
+        cartToggle.addEventListener("click", () => {
+          cartDrawer.classList.remove("translate-x-full");
         });
 
-        cartClose.addEventListener('click', () => {
-          cartDrawer.classList.add('translate-x-full');
+        cartClose.addEventListener("click", () => {
+          cartDrawer.classList.add("translate-x-full");
         });
 
-        checkoutBtn.addEventListener('click', () => {
+        checkoutBtn.addEventListener("click", () => {
           if (cart.length === 0) {
-            showToast('장바구니가 비어 있습니다.');
+            showToast("장바구니가 비어 있습니다.");
             return;
           }
-          showToast('🚀 주문이 접수되었습니다! 즉시 발송 준비에 들어갑니다.');
+          showToast("🚀 주문이 접수되었습니다! 즉시 발송 준비에 들어갑니다.");
           cart = [];
           updateCartUI();
-          cartDrawer.classList.add('translate-x-full');
+          cartDrawer.classList.add("translate-x-full");
         });
 
         // Add event listener to Recommendation Matcher "Add to Cart" button dynamically
-        document.getElementById('recommend-add-btn').addEventListener('click', () => {
-          const recName = document.getElementById('recommend-name').innerText;
-          const matchedGpu = gpuData.find(g => g.name === recName || g.name.includes(recName));
-          if (matchedGpu) {
-            addToCart(gpuData.indexOf(matchedGpu) + 1, matchedGpu.name, matchedGpu.price, recName);
-          }
-        });
+        document
+          .getElementById("recommend-add-btn")
+          .addEventListener("click", () => {
+            const recName = document.getElementById("recommend-name").innerText;
+            const matchedGpu = gpuData.find(
+              (g) => g.name === recName || g.name.includes(recName),
+            );
+            if (matchedGpu) {
+              addToCart(
+                gpuData.indexOf(matchedGpu) + 1,
+                matchedGpu.name,
+                matchedGpu.price,
+                recName,
+              );
+            }
+          });
       }
 
       // 4. ADD TO CART FUNCTION
       function addToCart(id, name, price, shortName) {
-        const existingItem = cart.find(item => item.id === id);
+        const existingItem = cart.find((item) => item.id === id);
         if (existingItem) {
           existingItem.quantity += 1;
         } else {
@@ -950,43 +1844,47 @@
         }
         updateCartUI();
         showToast(`${shortName} 모델이 장바구니에 담겼습니다.`);
-        
+
         // Auto open cart drawer briefly or just update badge
-        const badge = document.getElementById('cart-badge');
-        badge.classList.add('scale-125');
-        setTimeout(() => badge.classList.remove('scale-125'), 300);
+        const badge = document.getElementById("cart-badge");
+        badge.classList.add("scale-125");
+        setTimeout(() => badge.classList.remove("scale-125"), 300);
       }
 
       // 5. UPDATE CART UI
       function updateCartUI() {
-        const container = document.getElementById('cart-items-container');
-        const emptyState = document.getElementById('cart-empty-state');
-        const badge = document.getElementById('cart-badge');
-        const totalPriceEl = document.getElementById('cart-total-price');
+        const container = document.getElementById("cart-items-container");
+        const emptyState = document.getElementById("cart-empty-state");
+        const badge = document.getElementById("cart-badge");
+        const totalPriceEl = document.getElementById("cart-total-price");
 
         // Update badge count
-        const totalItemsCount = cart.reduce((acc, curr) => acc + curr.quantity, 0);
+        const totalItemsCount = cart.reduce(
+          (acc, curr) => acc + curr.quantity,
+          0,
+        );
         badge.innerText = totalItemsCount;
 
         // Clear previous items except empty state
-        const itemElements = container.querySelectorAll('.cart-item-row');
-        itemElements.forEach(el => el.remove());
+        const itemElements = container.querySelectorAll(".cart-item-row");
+        itemElements.forEach((el) => el.remove());
 
         if (cart.length === 0) {
-          emptyState.style.display = 'flex';
-          totalPriceEl.innerText = '$0.00';
+          emptyState.style.display = "flex";
+          totalPriceEl.innerText = "$0.00";
           return;
         }
 
-        emptyState.style.display = 'none';
+        emptyState.style.display = "none";
         let subtotal = 0;
 
-        cart.forEach(item => {
+        cart.forEach((item) => {
           const itemTotal = item.price * item.quantity;
           subtotal += itemTotal;
 
-          const row = document.createElement('div');
-          row.className = 'cart-item-row flex items-center justify-between p-3 rounded-xl bg-slate-900 border border-slate-800/80 gap-3';
+          const row = document.createElement("div");
+          row.className =
+            "cart-item-row flex items-center justify-between p-3 rounded-xl bg-slate-900 border border-slate-800/80 gap-3";
           row.innerHTML = `
             <div class="flex-1">
               <span class="text-xs font-bold text-white block">${item.shortName}</span>
@@ -1009,49 +1907,56 @@
 
       // 6. REMOVE FROM CART
       function removeFromCart(id) {
-        cart = cart.filter(item => item.id !== id);
+        cart = cart.filter((item) => item.id !== id);
         updateCartUI();
-        showToast('장바구니에서 상품이 삭제되었습니다.');
+        showToast("장바구니에서 상품이 삭제되었습니다.");
       }
 
       // 7. TOAST NOTIFICATION CONTROL
       function showToast(message) {
-        const toast = document.getElementById('toast');
-        const toastMsg = document.getElementById('toast-message');
+        const toast = document.getElementById("toast");
+        const toastMsg = document.getElementById("toast-message");
         toastMsg.innerText = message;
-        
-        toast.classList.remove('translate-y-24', 'opacity-0');
-        toast.classList.add('translate-y-0', 'opacity-100');
+
+        toast.classList.remove("translate-y-24", "opacity-0");
+        toast.classList.add("translate-y-0", "opacity-100");
 
         setTimeout(() => {
-          toast.classList.remove('translate-y-0', 'opacity-100');
-          toast.classList.add('translate-y-24', 'opacity-0');
+          toast.classList.remove("translate-y-0", "opacity-100");
+          toast.classList.add("translate-y-24", "opacity-0");
         }, 3000);
       }
 
       // 8. PRODUCT FILTERS (Vanilla JS Layout filter)
       function filterProducts(brand) {
-        const cards = document.querySelectorAll('.product-card');
-        const btnAll = document.getElementById('filter-all');
-        const btnNvidia = document.getElementById('filter-nvidia');
-        const btnAmd = document.getElementById('filter-amd');
+        const cards = document.querySelectorAll(".product-card");
+        const btnAll = document.getElementById("filter-all");
+        const btnNvidia = document.getElementById("filter-nvidia");
+        const btnAmd = document.getElementById("filter-amd");
 
         // Reset button active classes
-        [btnAll, btnNvidia, btnAmd].forEach(btn => {
-          btn.className = 'px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 transition-all cursor-pointer';
+        [btnAll, btnNvidia, btnAmd].forEach((btn) => {
+          btn.className =
+            "px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 transition-all cursor-pointer";
         });
 
         // Set active button
-        if (brand === 'all') btnAll.className = 'px-4 py-2 rounded-xl bg-emerald-500 text-slate-950 font-bold transition-all cursor-pointer';
-        if (brand === 'nvidia') btnNvidia.className = 'px-4 py-2 rounded-xl bg-emerald-500 text-slate-950 font-bold transition-all cursor-pointer';
-        if (brand === 'amd') btnAmd.className = 'px-4 py-2 rounded-xl bg-purple-600 text-white font-bold transition-all cursor-pointer';
+        if (brand === "all")
+          btnAll.className =
+            "px-4 py-2 rounded-xl bg-emerald-500 text-slate-950 font-bold transition-all cursor-pointer";
+        if (brand === "nvidia")
+          btnNvidia.className =
+            "px-4 py-2 rounded-xl bg-emerald-500 text-slate-950 font-bold transition-all cursor-pointer";
+        if (brand === "amd")
+          btnAmd.className =
+            "px-4 py-2 rounded-xl bg-purple-600 text-white font-bold transition-all cursor-pointer";
 
         // Filter cards
-        cards.forEach(card => {
-          if (brand === 'all' || card.getAttribute('data-brand') === brand) {
-            card.style.display = 'flex';
+        cards.forEach((card) => {
+          if (brand === "all" || card.getAttribute("data-brand") === brand) {
+            card.style.display = "flex";
           } else {
-            card.style.display = 'none';
+            card.style.display = "none";
           }
         });
       }
@@ -1059,67 +1964,76 @@
       // 9. GPU MATCHING ALGORITHM (WIDGET LOGIC)
       function selectResolution(res) {
         activeResolution = res;
-        const buttons = document.querySelectorAll('#res-selector button');
-        buttons.forEach(btn => {
-          btn.className = 'py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer';
+        const buttons = document.querySelectorAll("#res-selector button");
+        buttons.forEach((btn) => {
+          btn.className =
+            "py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer";
         });
-        
-        document.getElementById(`btn-${res}`).className = 'py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 transition-all text-xs font-semibold focus:outline-none cursor-pointer';
+
+        document.getElementById(`btn-${res}`).className =
+          "py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 transition-all text-xs font-semibold focus:outline-none cursor-pointer";
         calculateRecommendation();
       }
 
       function selectPreset(preset) {
         activePreset = preset;
-        const buttons = document.querySelectorAll('#preset-selector button');
-        buttons.forEach(btn => {
-          btn.className = 'py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer';
+        const buttons = document.querySelectorAll("#preset-selector button");
+        buttons.forEach((btn) => {
+          btn.className =
+            "py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500/50 text-slate-300 hover:text-white transition-all text-xs font-semibold focus:outline-none cursor-pointer";
         });
-        
-        document.getElementById(`btn-${preset}`).className = 'py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 transition-all text-xs font-semibold focus:outline-none cursor-pointer';
+
+        document.getElementById(`btn-${preset}`).className =
+          "py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 transition-all text-xs font-semibold focus:outline-none cursor-pointer";
         calculateRecommendation();
       }
 
       function calculateRecommendation() {
-        const budgetSliderValue = parseInt(document.getElementById('budget-range').value);
-        
+        const budgetSliderValue = parseInt(
+          document.getElementById("budget-range").value,
+        );
+
         // Filter GPUs matching resolution, graphics preset, and budget preferences
         let matched = null;
-        
+
         // Sorting strategy: We find the GPU that best fits the selected criteria.
         // Higher resolution/presets need higher capability GPUs.
         // Let's filter candidates that fit the budget level.
-        const candidates = gpuData.filter(g => g.budget <= budgetSliderValue);
-        
+        const candidates = gpuData.filter((g) => g.budget <= budgetSliderValue);
+
         if (candidates.length === 0) {
           // Fallback if no matching budget
           matched = gpuData[0];
         } else {
           // Find the one that gives the best performance for the target resolution/preset
           // Map activeResolution to key
-          let resKey = 'res1440p';
-          if (activeResolution === '1080p') resKey = 'res1080p';
-          if (activeResolution === '4k') resKey = 'res4k';
+          let resKey = "res1440p";
+          if (activeResolution === "1080p") resKey = "res1080p";
+          if (activeResolution === "4k") resKey = "res4k";
 
           // Sort candidates by the fps under current preset
-          candidates.sort((a, b) => b[resKey][activePreset] - a[resKey][activePreset]);
+          candidates.sort(
+            (a, b) => b[resKey][activePreset] - a[resKey][activePreset],
+          );
           matched = candidates[0];
         }
 
         // Display the recommendation
         if (matched) {
-          let resKey = 'res1440p';
-          if (activeResolution === '1080p') resKey = 'res1080p';
-          if (activeResolution === '4k') resKey = 'res4k';
+          let resKey = "res1440p";
+          if (activeResolution === "1080p") resKey = "res1080p";
+          if (activeResolution === "4k") resKey = "res4k";
 
           const calculatedFps = matched[resKey][activePreset];
 
-          document.getElementById('recommend-name').innerText = matched.name;
-          document.getElementById('recommend-desc').innerText = matched.desc;
-          document.getElementById('recommend-fps').innerText = `${calculatedFps} FPS`;
-          
+          document.getElementById("recommend-name").innerText = matched.name;
+          document.getElementById("recommend-desc").innerText = matched.desc;
+          document.getElementById("recommend-fps").innerText =
+            `${calculatedFps} FPS`;
+
           // FPS Bar limit mapping (Max 300 for 100%)
           const barWidth = Math.min((calculatedFps / 240) * 100, 100);
-          document.getElementById('recommend-bar').style.width = `${barWidth}%`;
+          document.getElementById("recommend-bar").style.width = `${barWidth}%`;
         }
       }
     </script>
